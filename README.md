@@ -1,10 +1,9 @@
 # senior-project
----
+------
 #### icônes font-awesome :
 
 home :
 ```<i class="fa fa-home" aria-hidden="true"></i>```
-
 
 cadenas :
 ```<i class="fa fa-lock" aria-hidden="true"></i>```
