@@ -1,7 +1,7 @@
 # senior-project
 
 #### icônes font-awesome :
-
+###### (de base)
 home :
 ```<i class="fa fa-home" aria-hidden="true"></i>```
 
