@@ -3,22 +3,21 @@
 #### icônes font-awesome :
 
 home :
-```<i class="fa fa-home" aria-hidden="true"></i>
+```<i class="fa fa-home" aria-hidden="true"></i>```
 
 
 cadenas :
-```<i class="fa fa-lock" aria-hidden="true"></i>
+```<i class="fa fa-lock" aria-hidden="true"></i>```
 
 
 user :
-```<i class="fa fa-user" aria-hidden="true"></i>
+```<i class="fa fa-user" aria-hidden="true"></i>```
 
 users (ex entreprises, assoc) :
-```<i class="fa fa-users" aria-hidden="true"></i>
-
+```<i class="fa fa-users" aria-hidden="true"></i>```
 
 map :
-```<i class="fa fa-map-marker" aria-hidden="true"></i>
+```<i class="fa fa-map-marker" aria-hidden="true"></i>```
 
 loupe (search) :
 ```<i class="fa fa-search" aria-hidden="true"></i>```
