@@ -3,3 +3,142 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
+body{
+position: relative;
+}
+.signin{
+	width:60%;
+	margin:auto;
+}
+
+.band{
+	background-color: rgb(115,200,172);
+	text-align: center;
+	height: 150px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	border-radius-top:10px;
+}
+.photo{
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	margin-top: -69px;
+	margin-left: 5%;
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+}
+.content{
+	display: flex;
+	width: 100%;
+}
+.left{
+	background-color: rgb(182,182,182); /*gris clair*/
+	width:40%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	color: rgb(75,75,75);/* gris*/
+}
+.left-name p {
+	margin-left:50px;
+}
+.left-name{
+	margin-top: 80px;
+}
+.champ-left {
+	background-color: white;
+	height: 30px;
+	width: 200px;
+	box-shadow: 1px 1px rgb(116,116,116);
+	border-radius: 4px;
+	margin:auto;
+}
+.champ-left-adress{
+	background-color: white;
+	height: 30px;
+	width: 200px;
+	box-shadow: 1px 1px rgb(116,116,116);
+	border-radius: 5px;
+	margin:auto;
+}
+.left-adress-text{
+	width: 80%;
+	padding-left: 30px;
+}
+.champ-right{
+	background-color: white;
+	height: 30px;
+	width: 300px;
+	box-shadow: 2px 2px rgb(116,116,116);
+	border-radius: 5px;
+	margin:auto;
+}
+.champ-right-left{
+	background-color: white;
+	height: 30px;
+	box-shadow: 1px 1px rgb(116,116,116);
+	border-radius: 5px;
+	margin:auto;
+}
+.left-adress-title{
+	text-align: center;
+	margin-top: 30px;
+}
+.left-adress-color-texte {
+	margin-left:30px;
+	margin-top: 13px;
+	margin-bottom:13px;
+}
+.left-adress-color{
+	margin:auto;
+	margin-top: 30px;
+	background-color: rgb(186,221,212);/* bleu claire*/
+	border-radius: 5px;
+	width: 80%;
+	margin-top: 40px;
+	height: 70%;
+	padding-bottom: 30px;
+	padding-top: 20px;
+	margin-bottom: 30px;
+}
+.left-adress-text  {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.text-margin {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.right{
+	background-color: rgb(207,207,207); /*gris très clair*/
+	width: 60%;
+	color: rgb(75,75,75);/* gris*/
+}
+.right-text{
+	margin-top: 96px;
+}
+.right-text p {
+	margin-left: 51px;
+	width: 80%;
+}
+.champ-right-big {
+	background-color: white;
+	height: 180px;
+	width: 300px;
+	box-shadow: 1px 1px rgb(116,116,116);
+	border-radius: 5px;
+	margin:auto;
+}
+.button-inscription{
+	color: rgb(75,75,75);
+	height: 50px;
+	width: 180px;
+	border-radius: 10px;
+	margin:auto;
+	margin-top: 100px;
+	margin-left: 100px;
+}
