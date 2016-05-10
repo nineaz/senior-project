@@ -66,3 +66,10 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 9, ../sass/home.scss */
+header {
+  background-color: #dd170f;
+  width: 100%;
+  height: 100vh;
+}
