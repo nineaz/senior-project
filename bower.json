@@ -1,0 +1,14 @@
+{
+  "name": "seniorProject",
+  "homepage": "https://github.com/dianatecher/senior-project",
+  "description": "app pour les retraités",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
