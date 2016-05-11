@@ -1,1 +1,1 @@
-var appProjectSenior = angular.module('appProjectSenior', [ngRoute]);
+var appProjectSenior = angular.module("appProjectSenior", ["ngRoute"]);

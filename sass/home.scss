@@ -25,7 +25,8 @@ body{
  header{
   width: 100%;
   height:600px;
-  background-image: url(../images/banner.jpeg);
+  // background-image: url(../images/banner.jpeg);
+  background-color: #80CBC4;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -173,7 +174,7 @@ body{
    background-color: rgb(140, 22, 51);
    display: flex;
    margin: 30px auto 0 auto;
-   height: 800px;
+   height: auto;
    width: 100%;
 
    .container-annonce{
@@ -329,7 +330,7 @@ body{
     // position: fixed;
     top: 0;
     right: 0;
-    height: auto;
+    height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
     .titre-container-retraite{

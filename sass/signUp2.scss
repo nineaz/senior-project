@@ -1,0 +1,184 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass";
+
+$body-bg: rgb(245, 245, 245);
+$color-font: rgba(255, 255, 255, 0.71);
+$btn-bg:#03172e;
+
+body{
+ background-color: $body-bg;
+ width: 85%;
+ height: auto;
+ margin: 7% auto;
+ display: flex;
+ justify-content:center;
+ align-items: center;
+ font-family: 'Inconsolata', ;
+
+   .signUp{
+    width: 80%;
+    height: 700px;
+    margin:0 15px ;
+    background-color: #715151;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    // border-radius: 15px;
+    background-color: rgb(35, 190, 44);
+    // background: linear-gradient(to right, rgba(6,19,29,0.46) 0%, rgba(9,24,36,0.46) 13%, rgba(16,34,50,0.61) 39%, rgba(11,29,46,0.73) 61%, rgba(2,19,38,0.73) 100%);
+    color:$color-font;
+
+    #signIn{
+     // background: linear-gradient(182deg, rgba(3,23,46,0.5) 0%, rgba(7,53,105,0.5) 49%, rgba(6,57,107,0.5) 51%, rgba(0,163,163,0.5) 100%);
+    }
+
+  .container{
+    width: 98%;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // border-radius: 15px;
+    background-color: rgb(41, 108, 81);
+    // background: linear-gradient(162deg, rgba(3,23,46,0.5) 0%, rgba(7,53,105,0.5) 49%, rgba(6,57,107,0.5) 51%, rgba(0,163,163,0.5) 100%);
+    box-shadow: 7px 8px 5px -3px rgba(0,0,0,0.58);
+
+    &:first-of-type{
+     margin-right: 20px;
+    }
+
+   .container-signUp{
+     position: relative;
+     width: 89%;
+     height: 90%;
+     display: flex;
+     border-radius: 5px;
+     align-items: center;
+     justify-content: space-around;
+     flex-direction: column;
+     padding: 2%;
+
+       h1{
+        top: 0;
+        position: absolute;
+        left:40% ;
+        font-size: 25px;
+       }
+       .add-photo{
+        width: 150px;
+        height: 150px;
+        background-color: rgb(82, 42, 77);
+        border-radius: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .upload-photo{
+
+        }
+       }
+     .form-group{
+       // position: absolute;
+       z-index: 2;
+       left: 7.5%;
+       top: 20%;
+       width: 85%;
+       height: auto;
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+
+      input{
+        width: 86%;
+        height: 40px;
+        margin:5px 0 11px 0;
+        padding-left: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 30px;
+        background-color: transparent;
+        color:$color-font;
+      }
+      .label-input{
+       position: absolute;
+       left: 0%;
+       height:30px;
+       font-size: 13px;
+       width: 50%;
+       display: flex;
+       justify-content:center;
+       align-items: center;
+
+       h2{
+        margin-bottom: 7px;
+        width:100%;
+        margin-left: -45px;
+       }
+      }
+     }
+     .boutton{
+       position: absolute;
+       width: 75.5%;
+       text-align: center;
+       height: 45px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       left:12%;
+       top: 95%;
+       bottom:0%;
+       border-radius: 30px;
+       background-color: rgba(3, 23, 46, 0.75);
+     }
+     #boutton-bis{
+      margin-top: 60%;
+      width: 90%;
+      left: 5%;
+     }
+    }
+   }
+  }
+  #cercle-black{
+   background-color: $body-bg;
+  }
+  .cercle{
+   width: 130px;
+   height: 130px;
+   background: linear-gradient(to right, rgba(6,19,29,0.46) 0%, rgba(9,24,36,0.46) 13%, rgba(16,34,50,0.61) 39%, rgba(11,29,46,0.73) 61%, rgba(2,19,38,0.73) 100%);
+   border-radius: 65px;
+   position: absolute;
+   top: 39%;
+   left: 45.2%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color:$color-font;
+   font-size: 35px;
+
+   .petit-cercle{
+    width: 120px;
+    height: 120px;
+    background-color: $body-bg;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .barre{
+     width: 29px;
+     height: 130px;
+     background-color: $body-bg;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     i{
+      color: rgb(252, 85, 236);
+     }
+    }
+   }
+  }
+}

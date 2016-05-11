@@ -6,7 +6,7 @@
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.css" media="screen" title="no title" charset="utf-8">
  <link rel="stylesheet" href="../../stylesheets/profils.css" media="screen" title="no title" charset="utf-8">
- <link rel="stylesheet" href="../../stylesheets/signIn.css" media="screen" title="no title" charset="utf-8">
+ <link rel="stylesheet" href="../../stylesheets/signUp2.css" media="screen" title="no title" charset="utf-8">
  <link rel="stylesheet" href="../../stylesheets/home.css" media="screen" title="no title" charset="utf-8">
  <link rel="stylesheet" href="../../stylesheets/scroll.css" media="screen" title="no title" charset="utf-8">
  <title>Project Senior</title>
@@ -98,12 +98,12 @@
    </div>
   </section>
   <section class="middle-container">
-   <section class="container-annonce">
+   <section class="container-annonce" ng-controller="societesCtrl">
      <div class="titre-container-annonce">
       <h2>Dernière Annonce</h2>
      </div>
 
-     <div class="container-card-entreprise">
+     <div class="container-card-entreprise" ng-repeat=" societe in societes | limitTo:3">
       <div class="card-entreprise">
         <div class="img-entreprise">
          <div class="btn-entreprise">
@@ -114,10 +114,10 @@
         </div>
       </div>
 
-      <div class="card-profils-entreprise card-un">
+      <div class="card-profils-entreprise">
        <div class="container-info-entreprise">
         <div class="nom-entreprise">
-         <p>Lorem ipsum dolor sit amet</p>
+         <p>{{societe.company}}</p>
         </div>
         <div class="img-profils-entreprise">
          <img src="../../images/icon/businessman.svg" alt="">
@@ -125,11 +125,7 @@
         <div class="annonce-entreprise">
          <h4>On recherche :</h4>
          <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.
+          {{societe.about}}
          </p>
         </div>
        </div>
@@ -145,11 +141,12 @@
 
    </section>
 
-   <section class="container-retraite scrollbar-macosx">
+   <section class="container-retraite" ng-controller="retraiteCtrl">
     <div  class="titre-container-retraite">
      <h2>Dernier Retraité</h2>
     </div>
-    <div class="main-container-retraite">
+
+    <div class="main-container-retraite" ng-repeat=" user in users">
      <div class="container-card-retraite">
       <div class="card-retraite">
         <div class="img-retraite">
@@ -162,19 +159,17 @@
        <div class="img-profils-retraite">
        </div>
        <div class="nom-retraite">
-        <p>Holden Dean</p>
+        <p>{{user.name}}</p>
        </div>
        <div class="presentation-retraite">
         <div class="adreese-retraite">
          <span>
           <img src="../../images/icon/house.svg" alt="">
          </span>
-         <p>MONTREUIL 93100</p>
+         <p>{{user.address}}</p>
         </div>
         <p>
-         consectetur adipisicing elit,
-         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-         in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+         {{user.about}}
         </p>
       </div>
        <div class="btn-retraite">
@@ -184,43 +179,9 @@
        </div>
       </div>
      </div>
-     <div class="main-container-retraite">
-      <div class="container-card-retraite">
-       <div class="card-retraite">
-         <div class="img-retraite">
-          <img src="../../images/icon/manager.svg" alt="">
-         </div>
-       </div>
-      </div>
-      <div class="card-profils-retraite">
-        <div class="card-container-top"></div>
-        <div class="img-profils-retraite">
-        </div>
-        <div class="nom-retraite">
-         <p>Vincent Lewis</p>
-        </div>
-        <div class="presentation-retraite">
-         <div class="adreese-retraite">
-          <span>
-           <img src="../../images/icon/house.svg" alt="">
-          </span>
-          <p>PARIS 75012</p>
-         </div>
-         <p>
-          consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-         </p>
-       </div>
-        <div class="btn-retraite">
-         <a href="#">
-          <p>voir la fiche</p>
-         </a>
-        </div>
-       </div>
-      </div>
    </section>
   </section>
+
    <section class="containe-presentation-site">
     <div>
      <h2>
@@ -281,10 +242,27 @@
    <li><i class="fa fa-pinterest fa-3x" aria-hidden="true"></i></li>
   </ul>
  </footer>
- <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
- <script src="../../bower_components/angular/angular.js"></script>
- <script src="../../bower_components/angular-route/angular-route.js"></script>
- <script src="../appProjectSenior.js" charset="utf-8"></script>
+
+
+ <!-- REQUIREMENT -->
+ <script src="../../bower_components/angular/angular.js" charset="utf-8"></script>
+ <script src="../../bower_components/angular-route/angular-route.js" charset="utf-8"></script>
+ <script src="../appProjectSenior.js"></script>
  <script src="../routesProjectSenior.js" charset="utf-8"></script>
- <script src="../js/scroll.js"></script>
+
+ <!-- CONTROLLERS -->
+
+ <script type="text/javascript" src="../controllers/retraiteCtrl.js"></script>
+ <script type="text/javascript" src="../controllers/societesCtrl.js"></script>
+
+
+ <!--FACTORIES -->
+
+ <script src="../services/retraitreFactory.js"></script>
+ <script src="../services/societesFactory.js"></script>
+
+ <!-- DIRECTIVES -->
+
+ <!-- <script src="../js/scroll.js"></script> -->
+
 </body>

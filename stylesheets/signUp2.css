@@ -1,0 +1,238 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 13, ../sass/signUp2.scss */
+body {
+  background-color: whitesmoke;
+  width: 85%;
+  height: auto;
+  margin: 7% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inconsolata";
+}
+/* line 23, ../sass/signUp2.scss */
+body .signUp {
+  width: 80%;
+  height: 700px;
+  margin: 0 15px;
+  background-color: #715151;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #23be2c;
+  color: rgba(255, 255, 255, 0.71);
+}
+/* line 40, ../sass/signUp2.scss */
+body .signUp .container {
+  width: 98%;
+  height: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #296c51;
+  box-shadow: 7px 8px 5px -3px rgba(0, 0, 0, 0.58);
+}
+/* line 52, ../sass/signUp2.scss */
+body .signUp .container:first-of-type {
+  margin-right: 20px;
+}
+/* line 56, ../sass/signUp2.scss */
+body .signUp .container .container-signUp {
+  position: relative;
+  width: 89%;
+  height: 90%;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 2%;
+}
+/* line 67, ../sass/signUp2.scss */
+body .signUp .container .container-signUp h1 {
+  top: 0;
+  position: absolute;
+  left: 40%;
+  font-size: 25px;
+}
+/* line 73, ../sass/signUp2.scss */
+body .signUp .container .container-signUp .add-photo {
+  width: 150px;
+  height: 150px;
+  background-color: #522a4d;
+  border-radius: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 85, ../sass/signUp2.scss */
+body .signUp .container .container-signUp .form-group {
+  z-index: 2;
+  left: 7.5%;
+  top: 20%;
+  width: 85%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 96, ../sass/signUp2.scss */
+body .signUp .container .container-signUp .form-group input {
+  width: 86%;
+  height: 40px;
+  margin: 5px 0 11px 0;
+  padding-left: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.71);
+}
+/* line 106, ../sass/signUp2.scss */
+body .signUp .container .container-signUp .form-group .label-input {
+  position: absolute;
+  left: 0%;
+  height: 30px;
+  font-size: 13px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 116, ../sass/signUp2.scss */
+body .signUp .container .container-signUp .form-group .label-input h2 {
+  margin-bottom: 7px;
+  width: 100%;
+  margin-left: -45px;
+}
+/* line 123, ../sass/signUp2.scss */
+body .signUp .container .container-signUp .boutton {
+  position: absolute;
+  width: 75.5%;
+  text-align: center;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 12%;
+  top: 95%;
+  bottom: 0%;
+  border-radius: 30px;
+  background-color: rgba(3, 23, 46, 0.75);
+}
+/* line 137, ../sass/signUp2.scss */
+body .signUp .container .container-signUp #boutton-bis {
+  margin-top: 60%;
+  width: 90%;
+  left: 5%;
+}
+/* line 145, ../sass/signUp2.scss */
+body #cercle-black {
+  background-color: whitesmoke;
+}
+/* line 148, ../sass/signUp2.scss */
+body .cercle {
+  width: 130px;
+  height: 130px;
+  background: linear-gradient(to right, rgba(6, 19, 29, 0.46) 0%, rgba(9, 24, 36, 0.46) 13%, rgba(16, 34, 50, 0.61) 39%, rgba(11, 29, 46, 0.73) 61%, rgba(2, 19, 38, 0.73) 100%);
+  border-radius: 65px;
+  position: absolute;
+  top: 39%;
+  left: 45.2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.71);
+  font-size: 35px;
+}
+/* line 162, ../sass/signUp2.scss */
+body .cercle .petit-cercle {
+  width: 120px;
+  height: 120px;
+  background-color: whitesmoke;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 170, ../sass/signUp2.scss */
+body .cercle .petit-cercle .barre {
+  width: 29px;
+  height: 130px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 178, ../sass/signUp2.scss */
+body .cercle .petit-cercle .barre i {
+  color: #fc55ec;
+}
