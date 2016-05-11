@@ -1,29 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="appProjectSenior">
 <head>
  <meta charset="UTF-8">
- <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+ <!-- <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8"> -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.css" media="screen" title="no title" charset="utf-8">
  <link rel="stylesheet" href="../../stylesheets/profils.css" media="screen" title="no title" charset="utf-8">
  <link rel="stylesheet" href="../../stylesheets/signIn.css" media="screen" title="no title" charset="utf-8">
  <link rel="stylesheet" href="../../stylesheets/home.css" media="screen" title="no title" charset="utf-8">
+ <link rel="stylesheet" href="../../stylesheets/scroll.css" media="screen" title="no title" charset="utf-8">
  <title>Project Senior</title>
 </head>
 
 <body>
  <header>
-  <nav>
+  <nav class="nav-menu">
    <ul>
-    <li>Lorem</li>
-    <li>home</li>
-    <li>inscription</li>
+    <li class="logo">
+     <a href="">Lorem ipsum dolor sit amet</a>
+    </li>
+    <li class="menu-lorem">
+     <a href="">Lorem</a>
+    </li>
+    <li class="menu-home">
+     <a href="">home</a>
+    </li>
+    <li class="menu-inscription">
+     <a href="">inscription</a>
+    </li>
    </ul>
   </nav>
-  <nav>
+  <nav class="nav-search">
    <ul>
-    <li>
-     <p>
-     </p>
+    <li class="nav-search-select">
+     <span>
+      <img src="../../images/icon/user.svg" alt="" />
+     </span>
      <select>
        <option value="retraité">Retraité</option>
        <option value="entreprise">Une entreprise</option>
@@ -32,12 +44,247 @@
        <option value="particulier">Un particulier</option>
      </select>
     </li>
+    <li class=" position-search-input">
+     <span>
+      <img src="../../images/icon/placeholder.svg" alt="" />
+     </span>
+     <input type="text" name="" id="">
+    </li>
+    <li class=" competence-search-input">
+     <select class="" name="">
+      <option value="test">test</option>
+     </select>
+     <span>
+      <img src="../../images/icon/magnifying-glass.svg" alt="" />
+     </span>
+    </li>
    </ul>
   </nav>
  </header>
 
+ <main>
+  <section class="avant-annonce">
+   <div class="container-avant-compétence">
+    <ul>
+     <li><img src="../../images/icon/free-60-icons-02.png" alt="" /></li>
+     <li><img src="../../images/icon/free-60-icons-03.png" alt="" /></li>
+     <li><img src="../../images/icon/free-60-icons-04.png" alt="" /></li>
+     <li><img src="../../images/icon/free-60-icons-05.png" alt="" /></li>
+    </ul>
+   </div>
+   <div>
+    <ul>
+     <li><img src="../../images/icon/free-60-icons-06.png" alt="" /></li>
+     <li><img src="../../images/icon/free-60-icons-07.png" alt="" /></li>
+     <li><img src="../../images/icon/free-60-icons-08.png" alt="" /></li>
+     <li><img src="../../images/icon/free-60-icons-09.png" alt="" /></li>
+    </ul>
+   </div>
+   <div>
+    <ul>
+     <li><img src="../../images/icon/free-60-icons-19.png" alt="" /></li>
+     <li><img src="../../images/icon/free-60-icons-11.png" alt="" /></li>
+     <li><img src="../../images/icon/free-60-icons-12.png" alt="" /></li>
+     <li><img src="../../images/icon/free-60-icons-13.png" alt="" /></li>
+    </ul>
+   </div>
+   <div>
+    <ul>
+     <li><img src="../../images/icon/free-60-icons-14.png" alt="" /></li>
+     <li><img src="../../images/icon/free-60-icons-15.png" alt="" /></li>
+     <li><img src="../../images/icon/free-60-icons-16.png" alt="" /></li>
+     <li><img src="../../images/icon/free-60-icons-17.png" alt="" /></li>
+    </ul>
+   </div>
+  </section>
+  <section class="middle-container">
+   <section class="container-annonce">
+     <div class="titre-container-annonce">
+      <h2>Dernière Annonce</h2>
+     </div>
+
+     <div class="container-card-entreprise">
+      <div class="card-entreprise">
+        <div class="img-entreprise">
+         <div class="btn-entreprise">
+          <a href="#">
+           <p>voir la fiche</p>
+          </a>
+         </div>
+        </div>
+      </div>
+
+      <div class="card-profils-entreprise card-un">
+       <div class="container-info-entreprise">
+        <div class="nom-entreprise">
+         <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="img-profils-entreprise">
+         <img src="../../images/icon/businessman.svg" alt="">
+        </div>
+        <div class="annonce-entreprise">
+         <h4>On recherche :</h4>
+         <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+         </p>
+        </div>
+       </div>
+        <div class="add-entreprise">
+         <div class="bg-add-entreprise">
+          <div class="cross-add">
+           <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+          </div>
+         </div>
+        </div>
+      </div>
+     </div>
+
+   </section>
+
+   <section class="container-retraite scrollbar-macosx">
+    <div  class="titre-container-retraite">
+     <h2>Dernier Retraité</h2>
+    </div>
+    <div class="main-container-retraite">
+     <div class="container-card-retraite">
+      <div class="card-retraite">
+        <div class="img-retraite">
+         <img src="../../images/icon/writer.svg" alt="" />
+        </div>
+      </div>
+     </div>
+     <div class="card-profils-retraite">
+       <div class="card-container-top"></div>
+       <div class="img-profils-retraite">
+       </div>
+       <div class="nom-retraite">
+        <p>Holden Dean</p>
+       </div>
+       <div class="presentation-retraite">
+        <div class="adreese-retraite">
+         <span>
+          <img src="../../images/icon/house.svg" alt="">
+         </span>
+         <p>MONTREUIL 93100</p>
+        </div>
+        <p>
+         consectetur adipisicing elit,
+         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        </p>
+      </div>
+       <div class="btn-retraite">
+        <a href="#">
+         <p>voir la fiche</p>
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="main-container-retraite">
+      <div class="container-card-retraite">
+       <div class="card-retraite">
+         <div class="img-retraite">
+          <img src="../../images/icon/manager.svg" alt="">
+         </div>
+       </div>
+      </div>
+      <div class="card-profils-retraite">
+        <div class="card-container-top"></div>
+        <div class="img-profils-retraite">
+        </div>
+        <div class="nom-retraite">
+         <p>Vincent Lewis</p>
+        </div>
+        <div class="presentation-retraite">
+         <div class="adreese-retraite">
+          <span>
+           <img src="../../images/icon/house.svg" alt="">
+          </span>
+          <p>PARIS 75012</p>
+         </div>
+         <p>
+          consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+         </p>
+       </div>
+        <div class="btn-retraite">
+         <a href="#">
+          <p>voir la fiche</p>
+         </a>
+        </div>
+       </div>
+      </div>
+   </section>
+  </section>
+   <section class="containe-presentation-site">
+    <div>
+     <h2>
+      Lorem ipsum dolor sit amet
+     </h2>
+    </div>
+    <div class="container-form-text">
+     <div class="form-text">
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+       Consequatur, ipsa. Quam voluptatum laboriosam expedita consequuntur
+       molestias facilis aut fuga, cupiditate accusamus blanditiis voluptates
+       voluptatibus amet, at unde vero harum perferendis.
+      </p>
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+       Eaque vero earum quam voluptatum facere obcaecati? Quam,
+       eum esse reiciendis cupiditate excepturi autem ipsum fuga.
+       Totam debitis dolorem consectetur iusto harum.
+      </p>
+     </div>
+     <div class="form-text">
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+       Consequatur, ipsa. Quam voluptatum laboriosam expedita consequuntur
+       molestias facilis aut fuga, cupiditate accusamus blanditiis voluptates
+       voluptatibus amet, at unde vero harum perferendis.
+      </p>
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+       Eaque vero earum quam voluptatum facere obcaecati? Quam,
+       eum esse reiciendis cupiditate excepturi autem ipsum fuga.
+       Totam debitis dolorem consectetur iusto harum.
+      </p>
+     </div>
+     <div class="form-text">
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+       Consequatur, ipsa. Quam voluptatum laboriosam expedita consequuntur
+       molestias facilis aut fuga, cupiditate accusamus blanditiis voluptates
+       voluptatibus amet, at unde vero harum perferendis.
+      </p>
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+       Eaque vero earum quam voluptatum facere obcaecati? Quam,
+       eum esse reiciendis cupiditate excepturi autem ipsum fuga.
+       Totam debitis dolorem consectetur iusto harum.
+      </p>
+     </div>
+    </div>
+   </section>
+ </main>
+ <footer>
+  <ul class="list-social-icon">
+   <li><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></li>
+   <li><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></li>
+   <li><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></li>
+   <li><i class="fa fa-pinterest fa-3x" aria-hidden="true"></i></li>
+  </ul>
+ </footer>
+ <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
  <script src="../../bower_components/angular/angular.js"></script>
  <script src="../../bower_components/angular-route/angular-route.js"></script>
  <script src="../appProjectSenior.js" charset="utf-8"></script>
  <script src="../routesProjectSenior.js" charset="utf-8"></script>
+ <script src="../js/scroll.js"></script>
 </body>
