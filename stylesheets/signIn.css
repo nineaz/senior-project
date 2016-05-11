@@ -12,7 +12,7 @@ position: relative;
 }
 
 .band{
-	background-color: rgb(115,200,172);
+	background-color: rgb(22,89,109);
 	text-align: center;
 	height: 150px;
 	width: 100%;
@@ -44,12 +44,14 @@ position: relative;
 	flex-direction: column;
 	color: rgb(75,75,75);/* gris*/
 }
-.left-name p {
-	margin-left:50px;
-}
 .left-name{
-	margin-top: 80px;
+	margin-top: 150px;
 }
+.left-name p {
+	margin-left:10px;
+	padding-top: 5px;
+}
+
 .champ-left {
 	background-color: white;
 	height: 30px;
@@ -57,7 +59,27 @@ position: relative;
 	box-shadow: 1px 1px rgb(116,116,116);
 	border-radius: 4px;
 	margin:auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
+.left-adress-title{
+	text-align: center;
+	margin-top: 30px;
+}
+.left-adress-title p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.left-adress-title h2 {
+	margin-bottom: 5px;
+}
+.left-adress-text{
+	width: 80%;
+	padding-left: 30px;
+}
+
 .champ-left-adress{
 	background-color: white;
 	height: 30px;
@@ -65,11 +87,10 @@ position: relative;
 	box-shadow: 1px 1px rgb(116,116,116);
 	border-radius: 5px;
 	margin:auto;
+	margin-bottom: 10px;
+	margin-bottom: 10px;
 }
-.left-adress-text{
-	width: 80%;
-	padding-left: 30px;
-}
+
 .champ-right{
 	background-color: white;
 	height: 30px;
@@ -85,12 +106,11 @@ position: relative;
 	border-radius: 5px;
 	margin:auto;
 }
-.left-adress-title{
-	text-align: center;
-	margin-top: 30px;
+.left-adress-text{
+
 }
-.left-adress-color-texte {
-	margin-left:30px;
+.left-adress-color-text {
+	margin-left:10px;
 	margin-top: 13px;
 	margin-bottom:13px;
 }
@@ -106,10 +126,7 @@ position: relative;
 	padding-top: 20px;
 	margin-bottom: 30px;
 }
-.left-adress-text  {
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
+
 .text-margin {
 	padding-bottom: 5px;
 	padding-top: 5px;
@@ -118,27 +135,23 @@ position: relative;
 	background-color: rgb(207,207,207); /*gris très clair*/
 	width: 60%;
 	color: rgb(75,75,75);/* gris*/
+	display: flex;
+	flex-direction: column;
 }
 .right-text{
-	margin-top: 96px;
+	margin-top: 130px;
+	text-align: center;
 }
-.right-text p {
-	margin-left: 83px;
-	width: 60%;
-}
-.right-competence-text{
-	margin-top: 100px;
-}
+
 .champ-right{
 	width: 350px;
+	margin-bottom: 30px;
 }
-.champ-right-big {
-	background-color: white;
-	height: 250px;
-	width: 350px;
-	box-shadow: 1px 1px rgb(116,116,116);
-	border-radius: 5px;
-	margin:auto;
+.champs-right-title-travail {
+	margin-bottom: 10px;
+}
+.champ-right-boutons{
+	text-align: center;
 }
 .button-inscription{
 	color: rgb(75,75,75);
