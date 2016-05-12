@@ -24,7 +24,7 @@
   {
     "_id": 2,
     "picture": "http://placehold.it/32x32",
-	"status":"Nous recherchons",
+	   "status":"Nous recherchons",
     "name": "Segolène Valentin",
     "company": "France Miroirs",
     "email": "france.miroirs@unesociete.com",

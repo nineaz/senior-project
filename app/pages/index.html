@@ -2,28 +2,46 @@
 <html lang="en" ng-app="appProjectSenior">
 <head>
  <meta charset="UTF-8">
- <!-- <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8"> -->
+
+
+ <!-- COMPONEMENTS -->
+
+ <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+ <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.css" media="screen" title="no title" charset="utf-8">
+
+
+
+ <!-- CSS -->
+ <link rel="stylesheet" href="../../stylesheets/header.css" media="screen" title="no title" charset="utf-8">
  <link rel="stylesheet" href="../../stylesheets/profils.css" media="screen" title="no title" charset="utf-8">
  <link rel="stylesheet" href="../../stylesheets/signUp2.css" media="screen" title="no title" charset="utf-8">
+ <link rel="stylesheet" href="../../stylesheets/annonceRecruteur.css" media="screen" title="no title" charset="utf-8">
+ <link rel="stylesheet" href="../../stylesheets/annonceRetraite.css" media="screen" title="no title" charset="utf-8">
+ <link rel="stylesheet" href="../../stylesheets/footer.css" media="screen" title="no title" charset="utf-8">
  <link rel="stylesheet" href="../../stylesheets/home.css" media="screen" title="no title" charset="utf-8">
- <link rel="stylesheet" href="../../stylesheets/scroll.css" media="screen" title="no title" charset="utf-8">
  <title>Project Senior</title>
 </head>
 
-<body>
+
+
+<body ng-init="showAnnonceRetraite = false">
  <header>
-  <nav class="nav-menu">
+  <nav class="nav-menu" ng-controller="menuCtrl">
    <ul>
     <li class="logo">
-     <a href="">Lorem ipsum dolor sit amet</a>
+     <a href="">Temps Libre</a>
     </li>
     <li class="menu-lorem">
-     <a href="">Lorem</a>
+     <a href="#/home">home</a>
     </li>
     <li class="menu-home">
-     <a href="">home</a>
+     <a href="" ng-click="toggleMenu()">connexion</a>
+      <ul ng-show="showMenu">
+       <li><a href="#/recruteur">recruteur</a></li>
+       <li><a href="#/retraite">retraités</a></li>
+      </ul>
     </li>
     <li class="menu-inscription">
      <a href="">inscription</a>
@@ -48,192 +66,64 @@
      <span>
       <img src="../../images/icon/placeholder.svg" alt="" />
      </span>
-     <input type="text" name="" id="">
+     <input type="text" name="" id="" placeholder="code postal">
     </li>
     <li class=" competence-search-input">
-     <select class="" name="">
-      <option value="test">test</option>
-     </select>
-     <span>
+     <div class="add-competence" ng-click="toggleCompetence()">
+      <a href="">chercher par compétences</a>
+     </div>
+     <span class="boutton-send">
       <img src="../../images/icon/magnifying-glass.svg" alt="" />
      </span>
     </li>
    </ul>
   </nav>
  </header>
+ <section class="avant-annonce" ng-controller="competenceCtrl" ng-show="showCompetence">
+  <div class="container-avant-compétence">
+   <ul>
+    <li><img src="../../images/icon/free-60-icons-02.png" alt="" /></li>
+    <li><img src="../../images/icon/free-60-icons-03.png" alt="" /></li>
+    <li><img src="../../images/icon/free-60-icons-04.png" alt="" /></li>
+    <li><img src="../../images/icon/free-60-icons-05.png" alt="" /></li>
+   </ul>
+  </div>
+  <div>
+   <ul>
+    <li><img src="../../images/icon/free-60-icons-06.png" alt="" /></li>
+    <li><img src="../../images/icon/free-60-icons-07.png" alt="" /></li>
+    <li><img src="../../images/icon/free-60-icons-08.png" alt="" /></li>
+    <li><img src="../../images/icon/free-60-icons-09.png" alt="" /></li>
+   </ul>
+  </div>
+  <div>
+   <ul>
+    <li><img src="../../images/icon/free-60-icons-19.png" alt="" /></li>
+    <li><img src="../../images/icon/free-60-icons-11.png" alt="" /></li>
+    <li><img src="../../images/icon/free-60-icons-12.png" alt="" /></li>
+    <li><img src="../../images/icon/free-60-icons-13.png" alt="" /></li>
+   </ul>
+  </div>
+  <div>
+   <ul>
+    <li><img src="../../images/icon/free-60-icons-14.png" alt="" /></li>
+    <li><img src="../../images/icon/free-60-icons-15.png" alt="" /></li>
+    <li><img src="../../images/icon/free-60-icons-16.png" alt="" /></li>
+    <li><img src="../../images/icon/free-60-icons-17.png" alt="" /></li>
+   </ul>
+  </div>
+ </section>
 
- <main>
-  <section class="avant-annonce">
-   <div class="container-avant-compétence">
-    <ul>
-     <li><img src="../../images/icon/free-60-icons-02.png" alt="" /></li>
-     <li><img src="../../images/icon/free-60-icons-03.png" alt="" /></li>
-     <li><img src="../../images/icon/free-60-icons-04.png" alt="" /></li>
-     <li><img src="../../images/icon/free-60-icons-05.png" alt="" /></li>
-    </ul>
-   </div>
-   <div>
-    <ul>
-     <li><img src="../../images/icon/free-60-icons-06.png" alt="" /></li>
-     <li><img src="../../images/icon/free-60-icons-07.png" alt="" /></li>
-     <li><img src="../../images/icon/free-60-icons-08.png" alt="" /></li>
-     <li><img src="../../images/icon/free-60-icons-09.png" alt="" /></li>
-    </ul>
-   </div>
-   <div>
-    <ul>
-     <li><img src="../../images/icon/free-60-icons-19.png" alt="" /></li>
-     <li><img src="../../images/icon/free-60-icons-11.png" alt="" /></li>
-     <li><img src="../../images/icon/free-60-icons-12.png" alt="" /></li>
-     <li><img src="../../images/icon/free-60-icons-13.png" alt="" /></li>
-    </ul>
-   </div>
-   <div>
-    <ul>
-     <li><img src="../../images/icon/free-60-icons-14.png" alt="" /></li>
-     <li><img src="../../images/icon/free-60-icons-15.png" alt="" /></li>
-     <li><img src="../../images/icon/free-60-icons-16.png" alt="" /></li>
-     <li><img src="../../images/icon/free-60-icons-17.png" alt="" /></li>
-    </ul>
-   </div>
-  </section>
-  <section class="middle-container">
-   <section class="container-annonce" ng-controller="societesCtrl">
-     <div class="titre-container-annonce">
-      <h2>Dernière Annonce</h2>
-     </div>
 
-     <div class="container-card-entreprise" ng-repeat=" societe in societes | limitTo:3">
-      <div class="card-entreprise">
-        <div class="img-entreprise">
-         <div class="btn-entreprise">
-          <a href="#">
-           <p>voir la fiche</p>
-          </a>
-         </div>
-        </div>
-      </div>
+<!-- MAIN -->
+<section class="warper">
+  <main ng-view>
+  </main>
+  <annonce-retraite ng-show="showAnnonceRetraite"></annonce-retraite>
+</section>
 
-      <div class="card-profils-entreprise">
-       <div class="container-info-entreprise">
-        <div class="nom-entreprise">
-         <p>{{societe.company}}</p>
-        </div>
-        <div class="img-profils-entreprise">
-         <img src="../../images/icon/businessman.svg" alt="">
-        </div>
-        <div class="annonce-entreprise">
-         <h4>On recherche :</h4>
-         <p>
-          {{societe.about}}
-         </p>
-        </div>
-       </div>
-        <div class="add-entreprise">
-         <div class="bg-add-entreprise">
-          <div class="cross-add">
-           <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
-          </div>
-         </div>
-        </div>
-      </div>
-     </div>
 
-   </section>
 
-   <section class="container-retraite" ng-controller="retraiteCtrl">
-    <div  class="titre-container-retraite">
-     <h2>Dernier Retraité</h2>
-    </div>
-
-    <div class="main-container-retraite" ng-repeat=" user in users">
-     <div class="container-card-retraite">
-      <div class="card-retraite">
-        <div class="img-retraite">
-         <img src="../../images/icon/writer.svg" alt="" />
-        </div>
-      </div>
-     </div>
-     <div class="card-profils-retraite">
-       <div class="card-container-top"></div>
-       <div class="img-profils-retraite">
-       </div>
-       <div class="nom-retraite">
-        <p>{{user.name}}</p>
-       </div>
-       <div class="presentation-retraite">
-        <div class="adreese-retraite">
-         <span>
-          <img src="../../images/icon/house.svg" alt="">
-         </span>
-         <p>{{user.address}}</p>
-        </div>
-        <p>
-         {{user.about}}
-        </p>
-      </div>
-       <div class="btn-retraite">
-        <a href="#">
-         <p>voir la fiche</p>
-        </a>
-       </div>
-      </div>
-     </div>
-   </section>
-  </section>
-
-   <section class="containe-presentation-site">
-    <div>
-     <h2>
-      Lorem ipsum dolor sit amet
-     </h2>
-    </div>
-    <div class="container-form-text">
-     <div class="form-text">
-      <p>
-       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-       Consequatur, ipsa. Quam voluptatum laboriosam expedita consequuntur
-       molestias facilis aut fuga, cupiditate accusamus blanditiis voluptates
-       voluptatibus amet, at unde vero harum perferendis.
-      </p>
-      <p>
-       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-       Eaque vero earum quam voluptatum facere obcaecati? Quam,
-       eum esse reiciendis cupiditate excepturi autem ipsum fuga.
-       Totam debitis dolorem consectetur iusto harum.
-      </p>
-     </div>
-     <div class="form-text">
-      <p>
-       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-       Consequatur, ipsa. Quam voluptatum laboriosam expedita consequuntur
-       molestias facilis aut fuga, cupiditate accusamus blanditiis voluptates
-       voluptatibus amet, at unde vero harum perferendis.
-      </p>
-      <p>
-       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-       Eaque vero earum quam voluptatum facere obcaecati? Quam,
-       eum esse reiciendis cupiditate excepturi autem ipsum fuga.
-       Totam debitis dolorem consectetur iusto harum.
-      </p>
-     </div>
-     <div class="form-text">
-      <p>
-       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-       Consequatur, ipsa. Quam voluptatum laboriosam expedita consequuntur
-       molestias facilis aut fuga, cupiditate accusamus blanditiis voluptates
-       voluptatibus amet, at unde vero harum perferendis.
-      </p>
-      <p>
-       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-       Eaque vero earum quam voluptatum facere obcaecati? Quam,
-       eum esse reiciendis cupiditate excepturi autem ipsum fuga.
-       Totam debitis dolorem consectetur iusto harum.
-      </p>
-     </div>
-    </div>
-   </section>
- </main>
  <footer>
   <ul class="list-social-icon">
    <li><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></li>
@@ -244,9 +134,14 @@
  </footer>
 
 
+<!-- JQUERY -->
+ <script src="../../bower_components/jquery/dist/jquery.js"></script>
+
  <!-- REQUIREMENT -->
  <script src="../../bower_components/angular/angular.js" charset="utf-8"></script>
  <script src="../../bower_components/angular-route/angular-route.js" charset="utf-8"></script>
+ <script src="../../bower_components/angular-animate/angular-animate.js" charset="utf-8"></script>
+ <script src="../../bower_components/angular-touch/angular-touch.js" charset="utf-8"></script>
  <script src="../appProjectSenior.js"></script>
  <script src="../routesProjectSenior.js" charset="utf-8"></script>
 
@@ -254,6 +149,9 @@
 
  <script type="text/javascript" src="../controllers/retraiteCtrl.js"></script>
  <script type="text/javascript" src="../controllers/societesCtrl.js"></script>
+ <script type="text/javascript" src="../controllers/competenceCtrl.js"></script>
+ <script type="text/javascript" src="../controllers/menuCtrl.js"></script>
+ <script type="text/javascript" src="../controllers/recruteurCtrl.js"></script>
 
 
  <!--FACTORIES -->
@@ -262,7 +160,9 @@
  <script src="../services/societesFactory.js"></script>
 
  <!-- DIRECTIVES -->
+<script src="../directives/annonceRetraite.js"></script>
 
- <!-- <script src="../js/scroll.js"></script> -->
+<!-- SCRIPT -->
+<script src="../js/fixedPosition.js"></script>
 
 </body>

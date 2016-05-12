@@ -1,0 +1,212 @@
+/* line 5, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 11, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite {
+  width: 30%;
+  position: relative;
+}
+/* line 14, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite .container-retraite {
+  background-color: #939191;
+  width: 100%;
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+/* line 23, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite .container-retraite .titre-container-retraite {
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(96, 108, 136, 0.6) 0%, rgba(63, 76, 107, 0.6) 100%);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 31, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite .container-retraite .titre-container-retraite h2 {
+  color: black;
+}
+/* line 37, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite .container-retraite .main-container-retraite {
+  background-color: white;
+  width: 90%;
+  height: auto;
+  margin: 5% auto;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+/* line 44, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite .container-retraite .main-container-retraite .container-card-retraite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 49, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite .container-retraite .main-container-retraite .container-card-retraite .card-retraite {
+  background: linear-gradient(to right, #45484d 0%, #000000 100%);
+  width: 100%;
+  height: 130px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 58, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite .container-retraite .main-container-retraite .container-card-retraite .card-retraite .img-retraite {
+  position: relative;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  background-color: #899CA2;
+  border-radius: 75px;
+  top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+/* line 71, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite .container-retraite .main-container-retraite .container-card-retraite .card-retraite .img-retraite img {
+  width: 100%;
+  margin-top: 25%;
+}
+/* line 78, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite {
+  margin-top: 40px;
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 86, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .nom-retraite {
+  padding: 30px 0 20px 0;
+  text-align: center;
+  font-size: 26px;
+}
+/* line 91, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .presentation-retraite {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  padding: 0 0 20px 0;
+  text-align: justify;
+  line-height: 28px;
+}
+/* line 98, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .presentation-retraite .adreese-retraite {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #80CBC4;
+  margin-bottom: 10px;
+  border-radius: 0 7px 7px 0;
+  text-align: center;
+}
+/* line 107, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .presentation-retraite .adreese-retraite span {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+/* line 114, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .presentation-retraite .adreese-retraite span img {
+  width: 100%;
+  height: 100%;
+}
+/* line 119, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .presentation-retraite .adreese-retraite p {
+  margin-left: 20px;
+}
+/* line 123, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .presentation-retraite p {
+  width: 90%;
+  margin: auto;
+}
+/* line 128, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .btn-retraite {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 133, ../sass/annonceRetraite.scss */
+body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .btn-retraite a {
+  width: 70%;
+  background-color: #37f113;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}

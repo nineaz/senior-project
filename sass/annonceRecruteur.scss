@@ -1,0 +1,186 @@
+@import "compass/reset";
+@import "compass";
+
+$bg-body:rgb(255, 255, 255);
+$bShadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+$insetShadow:inset 0px 2px 4px 0px rgba(0,0,0,0.50);
+$font-black: rgba(0, 0, 0, 0.5);
+
+body{
+ .warper{
+  .middle-container{
+   .container-annonce{
+    background-color: #D8D8D8;
+    width: 100%;
+    height: auto;
+
+    .titre-container-annonce{
+     width: 100%;
+     background: linear-gradient(to bottom, rgba(53,106,160,0.6) 0%,rgba(53,106,160,0.6) 100%);
+     // background-color: rgba(174, 205, 238, 0.7);
+     height: 70px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     h2{
+      font-size: 26px;
+     }
+    }
+    .container-card-entreprise{
+     background-color: rgb(255, 255, 255);
+     box-shadow: $bShadow;
+     display: flex;
+     width: 88%;
+     height: auto;
+     margin:5% auto;
+     .card-entreprise{
+      background-image: url(../images/bg-entreprise.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin: auto;
+      width: 50%;
+      height:450px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      .img-entreprise{
+        position: relative;
+        width: 60%;
+        margin-bottom: 10px;
+        .btn-entreprise{
+          position: relative;
+          width: 100%;
+          padding: 5px;
+          text-align: center;
+          background-color:#8BC34A;
+          border-radius: 5px;
+          box-shadow: $bShadow;
+           a{
+            text-decoration: none;
+            padding: 5px;
+            color: rgb(255, 255, 255);
+           }
+        }
+      }
+     }
+     .card-profils-entreprise{
+      width: 50%;
+      height: 450px;
+      position: relative;
+      display: flex;
+      background-color: hsla(0, 0%, 100%, 0.42);
+      .container-info-entreprise{
+       width: 96.5%;
+       height: 100%;
+       color: $font-black;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       .nom-entreprise{
+        // background-color: rgb(199, 134, 89);
+        text-align: center;
+        height: 10%;
+        font-size: 24px;
+        line-height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+       }
+       .img-profils-entreprise{
+        position: relative;
+        background-color: #F8D542;
+        width: 160px;
+        height: 160px;
+        border-radius: 80px;
+        overflow: hidden;
+        // left: 30%;
+        margin: 5% 0;
+        justify-content: center;
+        align-items: center;
+        box-shadow: $bShadow;
+        img{
+         width: 100%;
+         margin-top: 18%;
+        }
+       }
+       .annonce-entreprise{
+        // background-color: rgb(194, 161, 218);
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        line-height: 20px;
+        h4{
+         text-align: center;
+         line-height: 36px;
+         font-size: 25px;
+         margin-bottom: 15px;
+        }
+        p{
+         font-size: 15px;
+         text-align: justify;
+        }
+       }
+      }
+      .add-entreprise{
+       .bg-add-entreprise{
+        position: absolute;
+        background-color: rgb(173, 173, 173);
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: $insetShadow;
+        top: 40%;
+        left: 91%;
+        .cross-add{
+         background-color: #80CBC4;
+         width: 56px;
+         height: 56px;
+         border-radius: 33px;
+         z-index: 10;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         box-shadow: $bShadow;
+         i{
+          color: rgb(255, 255, 255);
+         }
+        }
+       }
+      }
+     }
+    }
+    .btn-carroussel{
+     width: 150px;
+     height: 50px;
+     margin: 0 auto 50px auto;
+     display: flex;
+     justify-content: space-between;
+
+     #btn-left{
+      width: 50px;
+      height: 50px;
+      img{
+       width: 100%;
+       height: 100%;
+      }
+     }
+     #btn-right{
+      width: 50px;
+      height: 50px;
+      img{
+       width: 100%;
+       height: 100%;
+      }
+     }
+    }
+   }
+  }
+ }
+}

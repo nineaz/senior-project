@@ -1,0 +1,41 @@
+@import "compass/reset";
+@import "compass";
+
+$bg-body:rgb(255, 255, 255);
+$bShadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+$insetShadow:inset 0px 2px 4px 0px rgba(0,0,0,0.50);
+$font-black: rgba(0, 0, 0, 0.5);
+
+
+body{
+ footer{
+  margin: 40px auto 0 0;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(65, 83, 88, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ul{
+     display: flex;
+     justify-content:space-around;
+     align-items:center;
+     width: 50%;
+     margin: auto;
+     li{
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+
+      i{
+       color: rgba(65, 83, 88, 1);
+       text-shadow: $bShadow;
+      }
+     }
+  }
+ }
+}

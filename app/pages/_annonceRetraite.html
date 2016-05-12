@@ -1,0 +1,39 @@
+<section class="container-retraite" ng-controller="retraiteCtrl" id="fixed-container-retraite">
+ <div  class="titre-container-retraite">
+  <h2>Dernier Retraité</h2>
+ </div>
+
+ <div class="main-container-retraite" ng-repeat=" user in users">
+  <div class="container-card-retraite">
+   <div class="card-retraite">
+     <div class="img-retraite">
+      <img src="../../images/icon/writer.svg" alt="" />
+     </div>
+   </div>
+  </div>
+  <div class="card-profils-retraite">
+    <div class="card-container-top"></div>
+    <div class="img-profils-retraite">
+    </div>
+    <div class="nom-retraite">
+     <p>{{user.name}}</p>
+    </div>
+    <div class="presentation-retraite">
+     <div class="adreese-retraite">
+      <span>
+       <img src="../../images/icon/house.svg" alt="">
+      </span>
+      <p>{{user.address}}</p>
+     </div>
+     <p>
+      {{user.about}}
+     </p>
+   </div>
+    <div class="btn-retraite">
+     <a href="#">
+      <p>voir la fiche</p>
+     </a>
+    </div>
+   </div>
+  </div>
+</section>
