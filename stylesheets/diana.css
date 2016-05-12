@@ -1,12 +1,14 @@
-body {
+/*body {
 	background-color: #D8D8D8;
 	font-family: 'Source Code Pro', 'Courier 10 Pitch', 'Courier New';
-}
+}*/
 
 .container-dt {
-	width:1280px;
+	width:100%;
 	height:auto;
 	margin:50px auto;
+	display: flex;
+	justify-content: center;
 	position: relative;
 /*	border: 1px solid red;*/
 }
@@ -45,7 +47,7 @@ body {
 
 /* = = = =  Photo du particulier = = = = */
 .particulier {
-	background-image: url(../images/icon/showman.svg); 
+	background-image: url(../images/icon/showman.svg);
 	background-color:lightgreen;
 	margin:30px auto;
 }
@@ -56,8 +58,8 @@ body {
 	height: 290px;
 	position: relative;
 }
-.societe-pic { 
-	background-image: url(../images/icon/manager.svg); 
+.societe-pic {
+	background-image: url(../images/icon/manager.svg);
 	background-color: #F8D542;
 	margin:30px auto;
 }
@@ -69,16 +71,16 @@ body {
 	position: absolute;
 	right:55px;
 	bottom:35px;
-	
-	background-image: url(../images/bg-entreprise2.jpg); 
+
+	background-image: url(../images/bg-entreprise2.jpg);
 	background-size: cover;
 }
 
 
 /*  = = = =  Photo du senior  = = = = = */
-.senior-pic { 
+.senior-pic {
 	background-color: gray;
-	background-image: url(../images/icon/writer.svg); 
+	background-image: url(../images/icon/writer.svg);
 	margin:30px auto;
 }
 
@@ -142,7 +144,7 @@ body {
 	padding:3px;
 	border-radius: 8px;
 	border:1px solid lightgray;
-	
+
 	box-shadow: inset 0px 3px 19px -7px rgba(0,0,0,0.75);
 	outline: none;
 	resize: none;
@@ -158,16 +160,17 @@ body {
 
 /*  = = = = = = = = = =  Div de droite : infos détaillées = = = = = = = = = = */
 .profil-details {
-	width: 600px;
+	width: 80%;
 	height:850px;
 	float: right;
 	margin-right: 130px;
+	background-color: rgb(2, 11, 144);
 }
 
 /* à propos --------- 1° partie de la div profil-details ---------  */
 .about {
 	height: 60px;
-	display:flex;	
+	display:flex;
 	justify-content: center;
 	align-items: center;
 }
@@ -218,7 +221,7 @@ body {
 
 .status, .status-bis, .skill-title, .dispo-title, .fake-button {
 	height: 65px;
-	display:flex;	
+	display:flex;
 	justify-content: center;
 	align-items: center;
 }
@@ -307,7 +310,7 @@ body {
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
-	background-position:center; 
+	background-position:center;
 	background-size: cover;
 	float: left;
 }
@@ -346,7 +349,7 @@ body {
 /* disponibilités */
 .dispo-title {
 	background-color: #4CAFA6;
-	
+
 	font-size:26px;
 	font-weight:600;
 	color:white;

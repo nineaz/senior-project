@@ -1,11 +1,19 @@
 appProjectSenior.controller("menuCtrl", ["$scope", "$rootScope",
    function($scope, $rootScope){
-    $scope.showMenu = false;
-    $rootScope.toggleMenu = function(){
-     if ($scope.showMenu == false) {
-      $scope.showMenu = true;
+    $scope.showMenuConnexion = false;
+    $scope.showMenuProfils = false;
+    $rootScope.toggleMenuConnexion = function(){
+     if ($scope.showMenuConnexion == false) {
+      $scope.showMenuConnexion = true;
      }else{
-      $scope.showMenu = false;
+      $scope.showMenuConnexion = false;
+     }
+    }
+    $rootScope.toggleMenuProfils = function(){
+     if ($scope.showMenuProfils == false) {
+      $scope.showMenuProfils = true;
+     }else{
+      $scope.showMenuProfils = false;
      }
     }
    }
