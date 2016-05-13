@@ -1,4 +1,6 @@
-<div class="container-dt">
+<section ng-controller="societesCtrl">
+<h1 class="titre-entreprise">Nos Entreprises</h1>
+<div class="container-dt"  ng-repeat=" societe in societes | limitTo:5">
  <div class="profil-photo">
 
   <div class="img-pro">
@@ -7,17 +9,17 @@
   </div>
 
   <div class="pro-name">
-   Sté LoremIpsum
+  {{societe.company}}
   </div>
 
   <div class="geo">
    <div class="ico-geo">
    </div>
-   <p>Donec rede justo ici</p>
+   <p>{{societe.address}}</p>
   </div>
 
   <div class="comment-title">
-    Maecenas tempus, tellus eget condimentum rhoncus.Tantum autem cuique tribuendum
+    {{societe.email}}
   </div>
    <textarea class="comment" rows="4" col="8">L'ambiance est très sympa dans cette société, chouette expérience!</textarea>
 
@@ -29,7 +31,7 @@
   </div>
 
   <div class="biopic">
-   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+   <p>{{societe.about}}</p>
   </div>
 
  <div class="gauche-droite">
@@ -39,7 +41,7 @@
      On recherche :
     </div>
 
-    <div class="status-bis pro">des bénévoles</div>
+    <div class="status-bis pro">Bénévoles</div>
 
     <div class="skill-title">
      <h3>Compétences recherchées </h3>
@@ -97,3 +99,4 @@
  </div><!-- profil-details-->
 
 </div><!-- container-->
+</section>

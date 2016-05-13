@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 5, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -68,29 +64,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 13, ../sass/signUp2.scss */
-body {
-  background-color: whitesmoke;
-  width: 85%;
-  height: auto;
-  margin: 7% auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Inconsolata";
-}
-/* line 23, ../sass/signUp2.scss */
 body .signUp {
   width: 80%;
   height: 700px;
-  margin: 0 15px;
-  background-color: #715151;
+  margin: 0 auto;
+  background-color: #939191;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #23be2c;
   color: rgba(255, 255, 255, 0.71);
 }
-/* line 40, ../sass/signUp2.scss */
+/* line 24, ../sass/signUp2.scss */
+body .signUp #signIn {
+  background: linear-gradient(182deg, rgba(3, 23, 46, 0.5) 0%, rgba(7, 53, 105, 0.5) 49%, rgba(6, 57, 107, 0.5) 51%, rgba(0, 163, 163, 0.5) 100%);
+}
+/* line 28, ../sass/signUp2.scss */
 body .signUp .container {
   width: 98%;
   height: 98%;
@@ -98,18 +86,18 @@ body .signUp .container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #296c51;
+  background: linear-gradient(162deg, rgba(3, 23, 46, 0.5) 0%, rgba(7, 53, 105, 0.5) 49%, rgba(6, 57, 107, 0.5) 51%, rgba(0, 163, 163, 0.5) 100%);
   box-shadow: 7px 8px 5px -3px rgba(0, 0, 0, 0.58);
 }
-/* line 52, ../sass/signUp2.scss */
+/* line 38, ../sass/signUp2.scss */
 body .signUp .container:first-of-type {
   margin-right: 20px;
 }
-/* line 56, ../sass/signUp2.scss */
+/* line 42, ../sass/signUp2.scss */
 body .signUp .container .container-signUp {
   position: relative;
   width: 89%;
-  height: 90%;
+  height: 80%;
   display: flex;
   border-radius: 5px;
   align-items: center;
@@ -117,46 +105,80 @@ body .signUp .container .container-signUp {
   flex-direction: column;
   padding: 2%;
 }
-/* line 67, ../sass/signUp2.scss */
-body .signUp .container .container-signUp h1 {
-  top: 0;
-  position: absolute;
-  left: 40%;
-  font-size: 25px;
-}
-/* line 73, ../sass/signUp2.scss */
+/* line 52, ../sass/signUp2.scss */
 body .signUp .container .container-signUp .add-photo {
-  width: 150px;
-  height: 150px;
-  background-color: #522a4d;
-  border-radius: 75px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+/* line 59, ../sass/signUp2.scss */
+body .signUp .container .container-signUp .add-photo .upload-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #b8b327;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* line 85, ../sass/signUp2.scss */
+/* line 69, ../sass/signUp2.scss */
+body .signUp .container .container-signUp h1 {
+  top: 0;
+  left: 40%;
+  font-size: 25px;
+}
+/* line 74, ../sass/signUp2.scss */
 body .signUp .container .container-signUp .form-group {
   z-index: 2;
   left: 7.5%;
-  top: 20%;
+  top: 15%;
   width: 85%;
   height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-/* line 96, ../sass/signUp2.scss */
+/* line 84, ../sass/signUp2.scss */
+body .signUp .container .container-signUp .form-group .info-rue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 89, ../sass/signUp2.scss */
+body .signUp .container .container-signUp .form-group .info-ville {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+/* line 95, ../sass/signUp2.scss */
 body .signUp .container .container-signUp .form-group input {
   width: 86%;
   height: 40px;
   margin: 5px 0 11px 0;
   padding-left: 15px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 30px;
+  border-radius: 5px;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.71);
 }
-/* line 106, ../sass/signUp2.scss */
+/* line 105, ../sass/signUp2.scss */
+body .signUp .container .container-signUp .form-group select {
+  margin: 30px auto 20px auto;
+  width: 80%;
+}
+/* line 110, ../sass/signUp2.scss */
+body .signUp .container .container-signUp .form-group .container-btn-status button {
+  margin: 10px auto 30px auto;
+}
+/* line 114, ../sass/signUp2.scss */
+body .signUp .container .container-signUp .form-group textarea {
+  margin: 10px 0 0 0;
+}
+/* line 117, ../sass/signUp2.scss */
 body .signUp .container .container-signUp .form-group .label-input {
   position: absolute;
   left: 0%;
@@ -167,13 +189,29 @@ body .signUp .container .container-signUp .form-group .label-input {
   justify-content: center;
   align-items: center;
 }
-/* line 116, ../sass/signUp2.scss */
+/* line 127, ../sass/signUp2.scss */
 body .signUp .container .container-signUp .form-group .label-input h2 {
   margin-bottom: 7px;
   width: 100%;
   margin-left: -45px;
 }
-/* line 123, ../sass/signUp2.scss */
+/* line 134, ../sass/signUp2.scss */
+body .signUp .container .container-signUp .boutton-envoyer {
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 140, ../sass/signUp2.scss */
+body .signUp .container .container-signUp .boutton-envoyer a {
+  padding: 15px 20px;
+  background-color: #0bb017;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+/* line 148, ../sass/signUp2.scss */
 body .signUp .container .container-signUp .boutton {
   position: absolute;
   width: 75.5%;
@@ -185,54 +223,15 @@ body .signUp .container .container-signUp .boutton {
   left: 12%;
   top: 95%;
   bottom: 0%;
-  border-radius: 30px;
   background-color: rgba(3, 23, 46, 0.75);
 }
-/* line 137, ../sass/signUp2.scss */
+/* line 162, ../sass/signUp2.scss */
 body .signUp .container .container-signUp #boutton-bis {
   margin-top: 60%;
   width: 90%;
   left: 5%;
 }
-/* line 145, ../sass/signUp2.scss */
-body #cercle-black {
-  background-color: whitesmoke;
-}
-/* line 148, ../sass/signUp2.scss */
-body .cercle {
-  width: 130px;
-  height: 130px;
-  background: linear-gradient(to right, rgba(6, 19, 29, 0.46) 0%, rgba(9, 24, 36, 0.46) 13%, rgba(16, 34, 50, 0.61) 39%, rgba(11, 29, 46, 0.73) 61%, rgba(2, 19, 38, 0.73) 100%);
-  border-radius: 65px;
-  position: absolute;
-  top: 39%;
-  left: 45.2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.71);
-  font-size: 35px;
-}
-/* line 162, ../sass/signUp2.scss */
-body .cercle .petit-cercle {
-  width: 120px;
-  height: 120px;
-  background-color: whitesmoke;
-  border-radius: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 /* line 170, ../sass/signUp2.scss */
-body .cercle .petit-cercle .barre {
-  width: 29px;
-  height: 130px;
-  background-color: whitesmoke;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* line 178, ../sass/signUp2.scss */
-body .cercle .petit-cercle .barre i {
-  color: #fc55ec;
+body #cercle-black {
+  background-color: black;
 }

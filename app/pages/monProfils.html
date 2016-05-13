@@ -1,25 +1,27 @@
 <section ng-controller="retraiteCtrl">
-<h1 class="titre-entreprise">Nos Retraités</h1>
-	<div class="container-dt" ng-repeat=" user in users | limitTo: 5">
-		<div class="profil-photo">
-			<div class="senior-pic">
 
+<h1 class="titre-entreprise">Mon Profils</h1>
+<div class="container-dt" ng-repeat=" user in users | limitTo: 1">
+		<div class="profil-photo">
+
+			<div class="img-pro">
+				<div class="particulier"></div>
 			</div>
 
-			<div class="senior-name">
-			{{user.name}}
+			<div class="pro-name">
+				{{user.name}}
 			</div>
 
 			<div class="geo">
 				<div class="ico-geo">
 				</div>
-      <p>{{user.address}}</p>
+				<p>{{user.address}}</p>
 			</div>
 
 			<div class="comment-title">
 				 Maecenas tempus, tellus eget condimentum rhoncus.Tantum autem cuique tribuendum
 			</div>
-			 <textarea class="comment" rows="4" col="8">Je suis très satisfaite de Marcel, il a été très efficace! Je le recommande</textarea>
+			 <textarea class="comment" rows="4" col="8">L'ambiance est très sympa dans cette société, chouette expérience!</textarea>
 
 		</div>
 
@@ -37,30 +39,29 @@
 		<div class="gauche-droite">
 			<div class="gauche">
 				<div class="skills">
-					<div class="status">
-						<h3>Statut</h3>
+					<div class="on-recherche">
+						Je recherche :
 					</div>
 
-					<div class="status-bis">Bénévole</div>
+					<div class="status-bis pro">un retraité</div>
 
 					<div class="skill-title">
-						<h3>Mes Compétences</h3>
+						<h3>Compétences recherchées </h3>
 					</div>
 
 					<div class="skills-pack">
 						<div class="skill-label">
-							<div class="skill-ico domaine1"></div>
-							<small>Électricité</small>
+							<div class="skill-ico domaine7"></div>
+							<small>Peinture</small>
 						</div>
 
 						<div class="skill-label">
-							<div class="skill-ico domaine2"></div>
-							<small>Dessin</small>
+							<div class="skill-ico domaine8"></div>
+							<small>Plomberie</small>
 						</div>
 
 						<div class="skill-label">
-							<div class="skill-ico domaine3"></div>
-							<small>Cuisine</small>
+							<div class="skill-ico"></div>
 						</div>
 
 						<div class="skill-label">
@@ -89,7 +90,7 @@
 
 					</div>
 					<div class="fake-button">
-						<h6>Contact</h6>
+						<h6><a href="#/home">Acceuil</a></h6>
 					</div>
 				</div>
 
@@ -99,4 +100,5 @@
 		</div><!-- profil-details-->
 
 	</div><!-- container-->
+
 </section>

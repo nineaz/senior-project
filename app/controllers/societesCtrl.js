@@ -1,6 +1,7 @@
 appProjectSenior.controller("societesCtrl", ["$scope", "societesFactory","$rootScope",
     function($scope, societesFactory, $rootScope){
-     $rootScope.showAnnonceRetraite = true;
+     $rootScope.canScroll = false;
+     $rootScope.showAnnonceRetraite = false;
      societesFactory.societes().then(function(result){
       $scope.societes = result.data;
      }, function(msg){

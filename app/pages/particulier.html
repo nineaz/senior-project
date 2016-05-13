@@ -1,39 +1,28 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-	<title>Profil Particulier</title>
+<section ng-controller="retraiteCtrl">
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="css/reset.css" rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
-
-	<link href="/stylesheets/diana.css" rel='stylesheet' type='text/css'>
-</head>
-
-<body>
-<div class="container-dt">
+<h1 class="titre-entreprise">Nos Particuliers</h1>
+<div class="container-dt" ng-repeat=" user in users | limitTo: 3">
 		<div class="profil-photo">
 
 			<div class="img-pro">
 				<div class="particulier"></div>
 			</div>
-			
+
 			<div class="pro-name">
-				François Pignon
+				{{user.name}}
 			</div>
 
 			<div class="geo">
 				<div class="ico-geo">
 				</div>
-				<p>Dolor sit amet etc</p>
+				<p>{{user.address}}</p>
 			</div>
 
 			<div class="comment-title">
 				 Maecenas tempus, tellus eget condimentum rhoncus.Tantum autem cuique tribuendum
 			</div>
-			 <textarea class="comment" rows="4" col="8">L'ambiance est très sympa dans cette société, chouette expérience!</textarea> 
-			
+			 <textarea class="comment" rows="4" col="8">L'ambiance est très sympa dans cette société, chouette expérience!</textarea>
+
 		</div>
 
 		<div class="profil-details">
@@ -42,14 +31,16 @@
 			</div>
 
 			<div class="biopic">
-				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+				<p>
+					{{user.about}}
+				</p>
 			</div>
 
 		<div class="gauche-droite">
 			<div class="gauche">
 				<div class="skills">
 					<div class="on-recherche">
-						Je recherche : 
+						Je recherche :
 					</div>
 
 					<div class="status-bis pro">un retraité</div>
@@ -63,7 +54,7 @@
 							<div class="skill-ico domaine7"></div>
 							<small>Peinture</small>
 						</div>
-						
+
 						<div class="skill-label">
 							<div class="skill-ico domaine8"></div>
 							<small>Plomberie</small>
@@ -82,7 +73,7 @@
 						</div>
 
 						<div class="skill-label">
-							<div class="skill-ico"></div>	
+							<div class="skill-ico"></div>
 						</div>
 					</div>
 				</div>
@@ -96,7 +87,7 @@
 					</div>
 					<br>
 					<div class="calendar">
-						
+
 					</div>
 					<div class="fake-button">
 						<h6>Contact</h6>
@@ -107,10 +98,7 @@
 		</div><!-- -gauchedroite -->
 
 		</div><!-- profil-details-->
-	
+
 	</div><!-- container-->
 
-
-</body>
-
-</html>
+</section>

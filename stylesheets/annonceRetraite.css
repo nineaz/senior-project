@@ -65,21 +65,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 11, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite {
-  width: 30%;
-  position: relative;
+  width: 32%;
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
-/* line 14, ../sass/annonceRetraite.scss */
+/* line 17, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite .container-retraite {
   background-color: #939191;
   width: 100%;
   box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
   height: 100vh;
   overflow: scroll;
   overflow-x: hidden;
 }
-/* line 23, ../sass/annonceRetraite.scss */
+/* line 25, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite .container-retraite .titre-container-retraite {
   width: 100%;
   background: linear-gradient(to bottom, rgba(96, 108, 136, 0.6) 0%, rgba(63, 76, 107, 0.6) 100%);
@@ -88,11 +89,11 @@ body .warper annonce-retraite .container-retraite .titre-container-retraite {
   justify-content: center;
   align-items: center;
 }
-/* line 31, ../sass/annonceRetraite.scss */
+/* line 33, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite .container-retraite .titre-container-retraite h2 {
   color: black;
 }
-/* line 37, ../sass/annonceRetraite.scss */
+/* line 39, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite .container-retraite .main-container-retraite {
   background-color: white;
   width: 90%;
@@ -100,14 +101,14 @@ body .warper annonce-retraite .container-retraite .main-container-retraite {
   margin: 5% auto;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
-/* line 44, ../sass/annonceRetraite.scss */
+/* line 46, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite .container-retraite .main-container-retraite .container-card-retraite {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-/* line 49, ../sass/annonceRetraite.scss */
+/* line 51, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite .container-retraite .main-container-retraite .container-card-retraite .card-retraite {
   background: linear-gradient(to right, #45484d 0%, #000000 100%);
   width: 100%;
@@ -118,7 +119,7 @@ body .warper annonce-retraite .container-retraite .main-container-retraite .cont
   justify-content: center;
   align-items: center;
 }
-/* line 58, ../sass/annonceRetraite.scss */
+/* line 60, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite .container-retraite .main-container-retraite .container-card-retraite .card-retraite .img-retraite {
   position: relative;
   overflow: hidden;
@@ -132,23 +133,23 @@ body .warper annonce-retraite .container-retraite .main-container-retraite .cont
   align-items: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
-/* line 71, ../sass/annonceRetraite.scss */
+/* line 73, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite .container-retraite .main-container-retraite .container-card-retraite .card-retraite .img-retraite img {
   width: 100%;
   margin-top: 25%;
 }
-/* line 78, ../sass/annonceRetraite.scss */
+/* line 80, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite {
   margin-top: 40px;
   color: rgba(0, 0, 0, 0.5);
 }
-/* line 86, ../sass/annonceRetraite.scss */
+/* line 88, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .nom-retraite {
   padding: 30px 0 20px 0;
   text-align: center;
   font-size: 26px;
 }
-/* line 91, ../sass/annonceRetraite.scss */
+/* line 93, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .presentation-retraite {
   width: 90%;
   height: auto;
@@ -157,7 +158,7 @@ body .warper annonce-retraite .container-retraite .main-container-retraite .card
   text-align: justify;
   line-height: 28px;
 }
-/* line 98, ../sass/annonceRetraite.scss */
+/* line 100, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .presentation-retraite .adreese-retraite {
   width: 100%;
   display: flex;
@@ -168,7 +169,7 @@ body .warper annonce-retraite .container-retraite .main-container-retraite .card
   border-radius: 0 7px 7px 0;
   text-align: center;
 }
-/* line 107, ../sass/annonceRetraite.scss */
+/* line 109, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .presentation-retraite .adreese-retraite span {
   width: 50px;
   height: 40px;
@@ -177,28 +178,28 @@ body .warper annonce-retraite .container-retraite .main-container-retraite .card
   justify-content: center;
   border-radius: 5px;
 }
-/* line 114, ../sass/annonceRetraite.scss */
+/* line 116, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .presentation-retraite .adreese-retraite span img {
   width: 100%;
   height: 100%;
 }
-/* line 119, ../sass/annonceRetraite.scss */
+/* line 121, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .presentation-retraite .adreese-retraite p {
   margin-left: 20px;
 }
-/* line 123, ../sass/annonceRetraite.scss */
+/* line 125, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .presentation-retraite p {
   width: 90%;
   margin: auto;
 }
-/* line 128, ../sass/annonceRetraite.scss */
+/* line 130, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .btn-retraite {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* line 133, ../sass/annonceRetraite.scss */
+/* line 135, ../sass/annonceRetraite.scss */
 body .warper annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .btn-retraite a {
   width: 70%;
   background-color: #37f113;

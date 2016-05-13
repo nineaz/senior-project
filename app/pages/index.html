@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="appProjectSenior">
+<html lang="en" ng-app="appProjectSenior" scroll>
 <head>
  <meta charset="UTF-8">
 
@@ -7,7 +7,7 @@
  <!-- COMPONEMENTS -->
 
  <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
- <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+ <link rel="stylesheet" href="../../bower_components/angular-bootstrap/ui-bootstrap-csp.css" media="screen" title="no title" charset="utf-8">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.css" media="screen" title="no title" charset="utf-8">
 
@@ -17,6 +17,7 @@
  <link rel="stylesheet" href="../../stylesheets/header.css" media="screen" title="no title" charset="utf-8">
  <link rel="stylesheet" href="../../stylesheets/profils.css" media="screen" title="no title" charset="utf-8">
  <link rel="stylesheet" href="../../stylesheets/signUp2.css" media="screen" title="no title" charset="utf-8">
+ <link rel="stylesheet" href="../../stylesheets/login.css" media="screen" title="no title" charset="utf-8">
  <link rel="stylesheet" href="../../stylesheets/diana.css" media="screen" title="no title" charset="utf-8">
  <link rel="stylesheet" href="../../stylesheets/annonceRecruteur.css" media="screen" title="no title" charset="utf-8">
  <link rel="stylesheet" href="../../stylesheets/annonceRetraite.css" media="screen" title="no title" charset="utf-8">
@@ -27,33 +28,33 @@
 
 
 
-<body ng-init="showAnnonceRetraite = false">
+<body>
  <header>
   <nav class="nav-menu" ng-controller="menuCtrl">
    <ul>
     <li class="logo">
-     <a href="">Temps Libre</a>
+     <a href="">Retraite Active</a>
     </li>
     <li class="menu-lorem">
-     <a href="#/home">home</a>
+     <a href="#/home">Home</a>
     </li>
     <li class="menu-home">
-     <a href="" ng-click="toggleMenuProfils()">profils</a>
+     <a href="" ng-click="toggleMenuProfils()">Profils</a>
      <ul ng-show="showMenuProfils">
-      <li><a href="#/recruteur">Entreprise</a></li>
-      <li><a href="#/retraite">retraités</a></li>
-      <li><a href="#/association">Association</a></li>
+      <li ng-click="toggleMenuProfils()"><a href="#/recruteur">Entreprise</a></li>
+      <li ng-click="toggleMenuProfils()"><a href="#/retraite">Retraités</a></li>
+      <li ng-click="toggleMenuProfils()"><a href="#/particulier">Particuliers</a></li>
      </ul>
     </li>
     <li class="menu-home">
-     <a href="" ng-click="toggleMenuConnexion()">connexion</a>
+     <a href="" ng-click="toggleMenuConnexion()">Connexion</a>
       <ul ng-show="showMenuConnexion">
-       <li><a href="#/">recruteur</a></li>
-       <li><a href="#/">retraités</a></li>
+       <li ng-click="toggleMenuConnexion()"><a href="#/login">Recruteur</a></li>
+       <li ng-click="toggleMenuConnexion()"><a href="#/login">Retraités</a></li>
       </ul>
     </li>
     <li class="menu-inscription">
-     <a href="">inscription</a>
+     <a href="#/inscription">Inscription</a>
     </li>
    </ul>
   </nav>
@@ -64,7 +65,7 @@
       <img src="../../images/icon/user.svg" alt="" />
      </span>
      <select>
-       <option value="retraité">Retraité</option>
+       <option value="retraité"><a >Retraité</a></option>
        <option value="entreprise">Une entreprise</option>
        <option value="association">Une assocition</option>
        <option value="ecole">Une ecole</option>
@@ -79,7 +80,7 @@
     </li>
     <li class=" competence-search-input">
      <div class="add-competence" ng-click="toggleCompetence()">
-      <a href="">chercher par compétences</a>
+      <a href="">Chercher par compétences</a>
      </div>
      <span class="boutton-send">
       <img src="../../images/icon/magnifying-glass.svg" alt="" />
@@ -116,7 +117,7 @@
   <div>
    <ul>
     <li><img src="../../images/icon/free-60-icons-14.png" alt="" /></li>
-    <li><img src="../../images/icon/free-60-icons-15.png" alt="" /></li>
+    <a href="#/particulier" ng-click="toggleCompetence()"><li><img src="../../images/icon/free-60-icons-15.png" alt="" /></li></a>
     <li><img src="../../images/icon/free-60-icons-16.png" alt="" /></li>
     <li><img src="../../images/icon/free-60-icons-17.png" alt="" /></li>
    </ul>
@@ -125,10 +126,11 @@
 
 
 <!-- MAIN -->
+
 <section class="warper">
   <main ng-view>
   </main>
-  <annonce-retraite ng-show="showAnnonceRetraite"></annonce-retraite>
+  <!-- <annonce-retraite ng-hide="showAnnonceRetraite"></annonce-retraite> -->
 </section>
 
 
@@ -151,6 +153,8 @@
  <script src="../../bower_components/angular-route/angular-route.js" charset="utf-8"></script>
  <script src="../../bower_components/angular-animate/angular-animate.js" charset="utf-8"></script>
  <script src="../../bower_components/angular-touch/angular-touch.js" charset="utf-8"></script>
+ <script src="../../bower_components/angular-bootstrap/ui-bootstrap-tpls.js" charset="utf-8"></script>
+ <script src="../../bower_components/angular-bootstrap/ui-bootstrap.js" charset="utf-8"></script>
  <script src="../appProjectSenior.js"></script>
  <script src="../routesProjectSenior.js" charset="utf-8"></script>
 
@@ -161,6 +165,10 @@
  <script type="text/javascript" src="../controllers/competenceCtrl.js"></script>
  <script type="text/javascript" src="../controllers/menuCtrl.js"></script>
  <script type="text/javascript" src="../controllers/recruteurCtrl.js"></script>
+ <script type="text/javascript" src="../controllers/recruteurDirectiveCtrl.js"></script>
+ <script type="text/javascript" src="../controllers/carrouselRecruteur.js"></script>
+ <script type="text/javascript" src="../controllers/loginCtrl.js"></script>
+ <script type="text/javascript" src="../controllers/signInCtrl.js"></script>
 
 
  <!--FACTORIES -->
@@ -170,7 +178,7 @@
 
  <!-- DIRECTIVES -->
 <script src="../directives/annonceRetraite.js"></script>
-
+<script src="../directives/scrollDirective.js"></script>
 <!-- SCRIPT -->
 <script src="../js/fixedPosition.js"></script>
 

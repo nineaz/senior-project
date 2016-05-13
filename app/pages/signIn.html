@@ -1,18 +1,4 @@
-<!DOCTYPE html>
- <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
-  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="../../stylesheets/signUp2.css" media="screen" title="no title" charset="utf-8">
-  <title>Document</title>
- </head>
-
- <body>
-
- <section class="signUp">
+<section class="signUp">
    <div class="container">
      <div class="container-signUp">
        <h1>SIGN UP</h1>
@@ -20,49 +6,48 @@
         <div class="upload-photo">Ajouter ma photo</div>
        </div>
      <div class="form-group">
-       <input type="text" name="name" id="name" placeholder="Prenom">
-       <input type="text" name="last-name" id="last-name" placeholder="Nom">
-       <input type="text" name="speudo" id="speudo" placeholder="Speudo">
-       <input type="text" name="email" id="email" placeholder="Email">
+       <input type="text" name="name" id="name" placeholder="Prenom" required ng-minlength="2" ng-maxlength="20"/>
+       <input type="text" name="last-name" id="last-name" placeholder="Nom"/>
+       <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo" />
+       <input type="text" name="email" id="email" placeholder="Email" required/>
        <input type="password" name="password" id="password" placeholder="Mot de passe">
      </div>
      </div>
    </div>
 
-
    <div class="container" id="signIn">
     <div class="container-signUp">
     <div class="form-group">
-      <input type="text" name="name" id="name" placeholder="N°">
-      <input type="text" name="last-name" id="last-name" placeholder="Rue">
-      <input type="text" name="speudo" id="speudo" placeholder="Ville">
-      <input type="text" name="email" id="email" placeholder="code Postal">
-      <p>j'ai des compétences en :</p>
-      <select class="" name="">
-       <option value="jardinage">jardinage</option>
-       <option value="santé">santé</option>
+      <div class="info-rue">
+       <input type="text" name="name" id="name" placeholder="N°">
+       <input type="text" name="last-name" id="last-name" placeholder="Rue">
+      </div>
+      <div class="info-ville">
+       <input type="text" name="speudo" id="speudo" placeholder="Ville">
+       <input type="text" name="email" id="email" placeholder="code Postal">
+      </div>
+      <p id="menu-competence-text">J'ai des compétences en :</p>
+      <select id="menu-competence" name="menu-competence">
+       <option value="jardinage">Jardinage</option>
+       <option value="santé">Santé</option>
        <option value="Gardien de maison">Gardien de maison</option>
       </select>
 
+      <p id="status">Je suis</p>
       <div class="container-btn-status">
        <div>
-        <p>AutoEntrepreneur</p>
-       </div>
-       <div>
-        <p>Benevoles</p>
+         <button type="button" class="btn btn-primary">Auto-entrepreneur</button>
+ 		      <button type="button" class="btn btn-primary">Benevole</button>
        </div>
       </div>
 
-      <p>ecrivez quelque mots à propos de vos compétences :</p>
-      <textarea name="name" rows="8" cols="40"></textarea>
+      <p id="about">Ecrivez quelque mots à propos de vos compétences :</p>
+      <textarea id="textarea" name="textarea" rows="8" cols="40"></textarea>
      </div>
-     <div class="boutton">SIGN UP</div>
+   <!--   <div class="boutton"><p>
+   	<a href="#">SIGN UP</a> -->
+   <div class="boutton-envoyer"><a href="#/monProfils">INSCRIPTION</a></div>
+ 	</div>
     </div>
    </div>
  </section>
-
-
- <script src="js/jQuery.js"></script>
- <script src="js/script.js"></script>
-</body>
-</html>

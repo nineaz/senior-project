@@ -6,6 +6,7 @@
 @import "compass/reset";
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,600);
 @import url(https://fonts.googleapis.com/css?family=Maven+Pro:400,500);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
 @font-face {
 font-family:american;
 src: url("/font/American Typewriter Regular/American Typewriter Regular.ttf");
@@ -22,27 +23,23 @@ body{
  height: auto;
  margin: auto;
  // font-family: 'Dosis', sans-serif;
- font-family: 'Maven Pro', sans-serif;
+ // font-family: 'Maven Pro', sans-serif;
+ font-family: 'Source Code Pro', 'Courier 10 Pitch', 'Courier New';
  background-color: $bg-body;
 
  .warper{
  display: flex;
  margin-top: 40px;
+ width: 100%;
   main{
-   // position: relative;
-   width: 70%;
+   width: 100%;
    height: auto;
    margin: auto;
    display: flex;
    flex-direction: column;
 
    .middle-container{
-    // background-color: rgb(140, 22, 51);
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto 0 auto;
-    height: auto;
-    width: 100%;
+
    }
    .containe-presentation-site{
     background-color: rgba(122, 125, 114, 0.3);

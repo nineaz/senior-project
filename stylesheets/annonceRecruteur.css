@@ -63,13 +63,50 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 12, ../sass/annonceRecruteur.scss */
-body .warper .middle-container .container-annonce {
+/* line 11, ../sass/annonceRecruteur.scss */
+body .warper .banner-text {
+  width: 100%;
+  padding: 40px  40px 70px 40px;
+}
+/* line 14, ../sass/annonceRecruteur.scss */
+body .warper .banner-text div {
   background-color: #D8D8D8;
   width: 100%;
+  margin: auto;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+/* line 19, ../sass/annonceRecruteur.scss */
+body .warper .banner-text div h2 {
+  background: linear-gradient(to bottom, rgba(53, 106, 160, 0.6) 0%, rgba(53, 106, 160, 0.6) 100%);
+  height: 45px;
+  color: white;
+  line-height: 38px;
+  font-size: 28px;
+  text-align: center;
+}
+/* line 27, ../sass/annonceRecruteur.scss */
+body .warper .banner-text div p {
+  text-align: justify;
+  line-height: 28px;
+  font-size: 20px;
+  width: 90%;
+  margin: auto;
+  padding: 40px;
+}
+/* line 38, ../sass/annonceRecruteur.scss */
+body .warper .middle-container {
+  display: flex;
+  justify-content: center;
+  background-color: #D8D8D8;
+  width: 100%;
+}
+/* line 44, ../sass/annonceRecruteur.scss */
+body .warper .middle-container .container-annonce {
+  background-color: #D8D8D8;
+  width: 68%;
   height: auto;
 }
-/* line 17, ../sass/annonceRecruteur.scss */
+/* line 49, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .titre-container-annonce {
   width: 100%;
   background: linear-gradient(to bottom, rgba(53, 106, 160, 0.6) 0%, rgba(53, 106, 160, 0.6) 100%);
@@ -78,11 +115,11 @@ body .warper .middle-container .container-annonce .titre-container-annonce {
   justify-content: center;
   align-items: center;
 }
-/* line 26, ../sass/annonceRecruteur.scss */
+/* line 58, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .titre-container-annonce h2 {
   font-size: 26px;
 }
-/* line 30, ../sass/annonceRecruteur.scss */
+/* line 62, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .container-card-entreprise {
   background-color: white;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
@@ -91,7 +128,7 @@ body .warper .middle-container .container-annonce .container-card-entreprise {
   height: auto;
   margin: 5% auto;
 }
-/* line 37, ../sass/annonceRecruteur.scss */
+/* line 69, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .container-card-entreprise .card-entreprise {
   background-image: url(../images/bg-entreprise.jpg);
   background-repeat: no-repeat;
@@ -104,13 +141,13 @@ body .warper .middle-container .container-annonce .container-card-entreprise .ca
   justify-content: center;
   align-items: flex-end;
 }
-/* line 48, ../sass/annonceRecruteur.scss */
+/* line 80, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .container-card-entreprise .card-entreprise .img-entreprise {
   position: relative;
   width: 60%;
   margin-bottom: 10px;
 }
-/* line 52, ../sass/annonceRecruteur.scss */
+/* line 84, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .container-card-entreprise .card-entreprise .img-entreprise .btn-entreprise {
   position: relative;
   width: 100%;
@@ -120,13 +157,13 @@ body .warper .middle-container .container-annonce .container-card-entreprise .ca
   border-radius: 5px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
-/* line 60, ../sass/annonceRecruteur.scss */
+/* line 92, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .container-card-entreprise .card-entreprise .img-entreprise .btn-entreprise a {
   text-decoration: none;
   padding: 5px;
   color: white;
 }
-/* line 68, ../sass/annonceRecruteur.scss */
+/* line 100, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .container-card-entreprise .card-profils-entreprise {
   width: 50%;
   height: 450px;
@@ -134,7 +171,7 @@ body .warper .middle-container .container-annonce .container-card-entreprise .ca
   display: flex;
   background-color: rgba(255, 255, 255, 0.42);
 }
-/* line 74, ../sass/annonceRecruteur.scss */
+/* line 106, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .container-card-entreprise .card-profils-entreprise .container-info-entreprise {
   width: 96.5%;
   height: 100%;
@@ -144,7 +181,7 @@ body .warper .middle-container .container-annonce .container-card-entreprise .ca
   justify-content: center;
   align-items: center;
 }
-/* line 82, ../sass/annonceRecruteur.scss */
+/* line 114, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .container-card-entreprise .card-profils-entreprise .container-info-entreprise .nom-entreprise {
   text-align: center;
   height: 10%;
@@ -155,7 +192,7 @@ body .warper .middle-container .container-annonce .container-card-entreprise .ca
   align-items: center;
   margin-left: 10px;
 }
-/* line 93, ../sass/annonceRecruteur.scss */
+/* line 125, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .container-card-entreprise .card-profils-entreprise .container-info-entreprise .img-profils-entreprise {
   position: relative;
   background-color: #F8D542;
@@ -168,31 +205,31 @@ body .warper .middle-container .container-annonce .container-card-entreprise .ca
   align-items: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
-/* line 105, ../sass/annonceRecruteur.scss */
+/* line 137, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .container-card-entreprise .card-profils-entreprise .container-info-entreprise .img-profils-entreprise img {
   width: 100%;
   margin-top: 18%;
 }
-/* line 110, ../sass/annonceRecruteur.scss */
+/* line 142, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .container-card-entreprise .card-profils-entreprise .container-info-entreprise .annonce-entreprise {
   width: 90%;
   margin: auto;
   text-align: center;
   line-height: 20px;
 }
-/* line 116, ../sass/annonceRecruteur.scss */
+/* line 148, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .container-card-entreprise .card-profils-entreprise .container-info-entreprise .annonce-entreprise h4 {
   text-align: center;
   line-height: 36px;
   font-size: 25px;
   margin-bottom: 15px;
 }
-/* line 122, ../sass/annonceRecruteur.scss */
+/* line 154, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .container-card-entreprise .card-profils-entreprise .container-info-entreprise .annonce-entreprise p {
   font-size: 15px;
   text-align: justify;
 }
-/* line 129, ../sass/annonceRecruteur.scss */
+/* line 161, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .container-card-entreprise .card-profils-entreprise .add-entreprise .bg-add-entreprise {
   position: absolute;
   background-color: #adadad;
@@ -206,7 +243,7 @@ body .warper .middle-container .container-annonce .container-card-entreprise .ca
   top: 40%;
   left: 91%;
 }
-/* line 141, ../sass/annonceRecruteur.scss */
+/* line 173, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .container-card-entreprise .card-profils-entreprise .add-entreprise .bg-add-entreprise .cross-add {
   background-color: #80CBC4;
   width: 56px;
@@ -218,11 +255,11 @@ body .warper .middle-container .container-annonce .container-card-entreprise .ca
   align-items: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
-/* line 151, ../sass/annonceRecruteur.scss */
+/* line 183, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .container-card-entreprise .card-profils-entreprise .add-entreprise .bg-add-entreprise .cross-add i {
   color: white;
 }
-/* line 159, ../sass/annonceRecruteur.scss */
+/* line 191, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .btn-carroussel {
   width: 150px;
   height: 50px;
@@ -230,23 +267,168 @@ body .warper .middle-container .container-annonce .btn-carroussel {
   display: flex;
   justify-content: space-between;
 }
-/* line 166, ../sass/annonceRecruteur.scss */
+/* line 198, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .btn-carroussel #btn-left {
   width: 50px;
   height: 50px;
 }
-/* line 169, ../sass/annonceRecruteur.scss */
+/* line 201, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .btn-carroussel #btn-left img {
   width: 100%;
   height: 100%;
 }
-/* line 174, ../sass/annonceRecruteur.scss */
+/* line 206, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .btn-carroussel #btn-right {
   width: 50px;
   height: 50px;
 }
-/* line 177, ../sass/annonceRecruteur.scss */
+/* line 209, ../sass/annonceRecruteur.scss */
 body .warper .middle-container .container-annonce .btn-carroussel #btn-right img {
   width: 100%;
   height: 100%;
+}
+/* line 216, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite {
+  width: 32%;
+  position: relative;
+}
+/* line 219, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite .container-retraite {
+  background-color: #939191;
+  width: 100%;
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  height: 120vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+/* line 226, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite .container-retraite .titre-container-retraite {
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(96, 108, 136, 0.6) 0%, rgba(63, 76, 107, 0.6) 100%);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 234, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite .container-retraite .titre-container-retraite h2 {
+  color: black;
+}
+/* line 240, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite .container-retraite .main-container-retraite {
+  background-color: white;
+  width: 90%;
+  height: auto;
+  margin: 5% auto;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+/* line 247, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite .container-retraite .main-container-retraite .container-card-retraite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 252, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite .container-retraite .main-container-retraite .container-card-retraite .card-retraite {
+  background: linear-gradient(to right, #45484d 0%, #000000 100%);
+  width: 100%;
+  height: 130px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 261, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite .container-retraite .main-container-retraite .container-card-retraite .card-retraite .img-retraite {
+  position: relative;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  background-color: #899CA2;
+  border-radius: 75px;
+  top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+/* line 274, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite .container-retraite .main-container-retraite .container-card-retraite .card-retraite .img-retraite img {
+  width: 100%;
+  margin-top: 25%;
+}
+/* line 281, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite {
+  margin-top: 40px;
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 289, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .nom-retraite {
+  padding: 30px 0 20px 0;
+  text-align: center;
+  font-size: 26px;
+}
+/* line 294, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .presentation-retraite {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  padding: 0 0 20px 0;
+  text-align: justify;
+  line-height: 28px;
+}
+/* line 301, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .presentation-retraite .adreese-retraite {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #80CBC4;
+  margin-bottom: 10px;
+  border-radius: 0 7px 7px 0;
+  text-align: center;
+}
+/* line 310, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .presentation-retraite .adreese-retraite span {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+/* line 317, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .presentation-retraite .adreese-retraite span img {
+  width: 100%;
+  height: 100%;
+}
+/* line 322, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .presentation-retraite .adreese-retraite p {
+  margin-left: 20px;
+}
+/* line 326, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .presentation-retraite p {
+  width: 90%;
+  margin: auto;
+}
+/* line 331, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .btn-retraite {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 336, ../sass/annonceRecruteur.scss */
+body .warper .middle-container annonce-retraite .container-retraite .main-container-retraite .card-profils-retraite .btn-retraite a {
+  width: 70%;
+  background-color: #37f113;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }

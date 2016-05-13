@@ -2,37 +2,47 @@
 	background-color: #D8D8D8;
 	font-family: 'Source Code Pro', 'Courier 10 Pitch', 'Courier New';
 }*/
+main{
+	width: 100%;
 
+}
+.titre-entreprise{
+	width: 80%;
+	margin: auto;
+	background-color: rgb(35, 123, 164);
+	height: 80px;
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .container-dt {
-	width:100%;
+	width:80%;
 	height:auto;
 	margin:50px auto;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
+ background-color: rgba(122, 125, 114, 0.3);
 	position: relative;
-/*	border: 1px solid red;*/
 }
 
 /*  = = = = = = = = = =  Div de gauche : photo  = = = = = = = = = = */
 .profil-photo,  .profil-details {
-	border: 1px solid lightgray;
-	box-shadow: -2px 3px 2px gray;
-	border-radius:8px;
-
-	margin-top:15px;
-	margin-left:15px;
-	margin-bottom: 15px;
-
-	background-color: white;
+	box-shadow:  0px 2px 4px 0px rgba(0,0,0,0.50);
+	background-color: rgb(196, 198, 200);
 	position:relative;
 }
 
 .profil-photo {
-	width: 420px;
+	width: 39%;
 	height:850px;
-	float: left;
 	top:0;
-	margin-left: 110px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(81, 94, 144, 0.8);
 }
 
 
@@ -49,7 +59,7 @@
 .particulier {
 	background-image: url(../images/icon/showman.svg);
 	background-color:lightgreen;
-	margin:30px auto;
+	margin:26px auto;
 }
 
 /* = = = =  Photo du professionnel = = = = */
@@ -61,6 +71,7 @@
 .societe-pic {
 	background-image: url(../images/icon/manager.svg);
 	background-color: #F8D542;
+	box-shadow:  0px 2px 4px 0px rgba(0,0,0,0.50);
 	margin:30px auto;
 }
 
@@ -70,9 +81,9 @@
 	border-radius: 50%;
 	position: absolute;
 	right:55px;
-	bottom:35px;
-
+	bottom:15px;
 	background-image: url(../images/bg-entreprise2.jpg);
+	box-shadow:  0px 2px 4px 0px rgba(0,0,0,0.50);
 	background-size: cover;
 }
 
@@ -86,9 +97,8 @@
 
 /*  = = = = =  Nom du senior et de l'entreprise = = = = =  */
 .pro-name, .senior-name {
-	font-size: 40px;
-	font-weight: 700;
-	color: #847C54;
+	font-size: 36px;
+	color: rgb(255, 255, 255);
 	text-align: center;
 }
 
@@ -101,23 +111,23 @@
 	height: 80px;
 	margin-top: 50px;
 	margin-bottom: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .geo p {
 	font-size: 20px;
-	color:#7E754B;
-	font-weight: 600;
+	color:rgb(246, 241, 246);
 	margin-top: 30px;
-	float: right;
-	margin-right: 55px;  /*  pour positionner le texte par rapport à l'icône */
+	margin-left: 15px;
 }
 
 .ico-geo {
-
 	width: 64px;
 	height: 64px;
 	margin-top: 10px;
-	margin-left: 45px;
 	float:left;
 	background-image: url(../images/icon/placeholder.svg);
 	background-size: cover;
@@ -127,27 +137,24 @@
 
 /*  = = = = = = = = = =  COMMENTAIRE  = = = = = = = = = = */
 .comment-title {
-	width: 350px;
-	margin-top: 65px;
+	width: 90%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: justify;
 	margin-left: auto;
 	margin-right: auto;
-	color: #AF9062;
+	color: rgb(255, 255, 255);
 	text-align: center;
 }
 
 .comment {
-	width: 360px;
+	width: 90%;
 	height: 175px;
 	background-color: #EDEDED;
 	margin-top: 20px;
-	margin-left: 25px ;
 	padding:3px;
-	border-radius: 8px;
-	border:1px solid lightgray;
-
-	box-shadow: inset 0px 3px 19px -7px rgba(0,0,0,0.75);
-	outline: none;
-	resize: none;
+	/*outline: none;
+	resize: none;*/
 }
 
 .comment:focus {
@@ -160,11 +167,9 @@
 
 /*  = = = = = = = = = =  Div de droite : infos détaillées = = = = = = = = = = */
 .profil-details {
-	width: 80%;
+	width: 59%;
 	height:850px;
-	float: right;
-	margin-right: 130px;
-	background-color: rgb(2, 11, 144);
+	background-color: rgb(255, 255, 255);
 }
 
 /* à propos --------- 1° partie de la div profil-details ---------  */
@@ -176,8 +181,7 @@
 }
 
 .about h2 {
-	font-size: 30px;
-	font-weight: 600;
+	font-size: 26px;
 	color: white;
 }
 
@@ -185,14 +189,17 @@
 /*	width: 85%;*/
 	margin:20px 20px 20px 20px;
 	background-color:#D8D8D8;
-	border:1px solid #A7A7A7;
 }
 
 /*  présentation  --------- 2° partie de la div profil-details ---------  */
 .biopic p {
+	width: 95%;
+	margin: auto;
 	padding: 8px;
-	font-size: 20px;
+	font-size: 16px;
+	line-height: 26px;
 	color:#908A6A;
+	text-align: justify;
 }
 
 /* --------- 3eme partie de la div profil-details ---------  */
@@ -214,9 +221,11 @@
 }*/
 
 .on-recherche {
-	font-weight: 700;
 	font-size: 20px;
 	color:#A3A0A0;
+	width: 100%;
+	text-align: center;
+
 }
 
 .status, .status-bis, .skill-title, .dispo-title, .fake-button {
@@ -226,7 +235,7 @@
 	align-items: center;
 }
 
-.pro { font-weight: bold; font-size:32px !important;}
+/*.pro { font-weight: bold; font-size:32px !important;}*/
 
 /*   EFFETS sur les boutons */
 .status:hover, .status-bis:hover, .skill-title:hover, .dispo-title:hover, .fake-button:hover {
@@ -248,51 +257,51 @@
 /* Statut */
 .status {
 	background-color: #F4F4F4;
-	box-shadow: 0px 2px 1px lightgray;
+	/*box-shadow: 0px 2px 1px lightgray;*/
 	color:#A3A0A0;
-	font-size:36px;
-	font-weight:600;
+	font-size:26px;
 	width: 100%;
-	margin-right:20px;
+	margin-right:10px;
 }
 
 .status-bis {
 	background-color:transparent;
 	color:#91DB62;
-	font-size:32px;
+	font-size:26px;
+	margin-bottom: 15px;
+	margin-top: 15px;
 }
 
 /* Mes Compétences */
  .skill-title {
  	background-color: #E5E5E5;
- 	box-shadow: 0px 2px 1px #A3A0A0;
+ 	/*box-shadow: 0px 2px 1px #A3A0A0;*/
  	color:white;
- 	font-size:26px;
- 	/*font-weight: 600;*/
+ 	font-size:24px;
  	width: 100%;
 
  	text-align: center;
-	font-weight: 700;
-	text-shadow: 1px 1px 1px gray;
  }
 
 /*  div contenant les 6 items de compétences */
  .skills-pack {
  	margin-top:20px;
- 	width: 260px;
+ 	width: 100%;
  	height: 282px;
  	display: flex;
  	flex-wrap: wrap;
- 	justify-content: space-around;
+		align-items: center;
+ 	justify-content: space-between;
 }
 
 /* item compétence */
 .skill-label {
-	width: 115px;
+	width: 48%;
 	height: 70px;
+	/*border: 1px solid rgb(240, 181, 203);*/
 	padding-top: 10px;
-	border: 1px solid #EDEDED;
-	box-shadow: 1px 2px 2px lightgray;
+	padding-bottom: 10px;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
 	border-radius:10px;
 	display: flex;
 	flex-direction: column;  /*   Sinon 'Electricité dépasse ou alors le mot n'est pas lisible */
@@ -339,8 +348,8 @@
 }
 
  .dispos {
- 	width: 90%;
-	background-color: #E2E2E2;
+ width: 96%;
+	/*background-color: #E2E2E2;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -348,10 +357,10 @@
 
 /* disponibilités */
 .dispo-title {
-	background-color: #4CAFA6;
-
-	font-size:26px;
-	font-weight:600;
+	width: 85%;
+	margin: auto;
+	background-color: rgba(56, 153, 121, 0.79);
+	font-size:22px;
 	color:white;
 }
 
@@ -360,7 +369,7 @@
 	width:222px;
 	height: 308px;
 	margin:20px auto;
-	box-shadow: -6px 10px 25px#808080;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
 	background-image: url(../images/calendar.jpg);
 	background-size: cover;
 	background-position: center;
@@ -377,5 +386,4 @@
 	box-shadow: 0px 2px 1px #A3A0A0;
 	color:black;
 	font-size: 24px;
-	font-weight: 600;
 }

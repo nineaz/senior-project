@@ -1,0 +1,88 @@
+@import "compass/reset";
+@import "compass";
+
+$bg-body:rgb(255, 255, 255);
+$bShadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+$insetShadow:inset 0px 2px 4px 0px rgba(0,0,0,0.50);
+$font-black: rgba(0, 0, 0, 0.5);
+
+.container-form-signIn{
+ background-color: #939191;
+ height: auto;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ .top-line{
+  background: linear-gradient(to bottom, rgba(53,106,160,0.6) 0%,rgba(53,106,160,0.6) 100%);
+  width: 100%;
+  height: 50px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+ }
+ .container-login{
+  width: 70%;
+  margin:30px auto;
+  background-color: #939191;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .form-group{
+   width: 90%;
+   margin: 30px auto;
+   background-color: rgba(255, 255, 255, 1);
+   box-shadow: $bShadow;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 50px 0;
+   flex-direction: column;
+   input{
+    height: 35px;
+    width: 400px;
+    border: none;
+    background-color: rgb(233, 233, 233);
+   }
+   .user-logo{
+    margin: 20px 0;
+   }
+   .mail-logo{
+    margin: 20px 0;
+   }
+   .password-logo{
+    margin: 20px 0;
+   }
+  }
+  .submit-button{
+   width: 50%;
+   box-shadow: $bShadow;
+   margin-bottom: 20px;
+   height: 35px;
+   background-color:  rgb(11, 176, 23);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px;
+   &:hover{
+    background-color:rgb(232, 232, 232);
+    color:  rgb(11, 176, 23);
+   }
+
+   a{
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+    &:hover{
+     color:  rgb(11, 176, 23);
+    }
+   }
+  }
+ }
+}

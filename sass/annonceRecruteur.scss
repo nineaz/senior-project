@@ -8,10 +8,42 @@ $font-black: rgba(0, 0, 0, 0.5);
 
 body{
  .warper{
-  .middle-container{
-   .container-annonce{
+  .banner-text{
+   width: 100%;
+   padding: 40px  40px 70px 40px;
+   div{
     background-color: #D8D8D8;
     width: 100%;
+    margin: auto;
+    box-shadow: $bShadow;
+      h2{
+     background: linear-gradient(to bottom, rgba(53,106,160,0.6) 0%,rgba(53,106,160,0.6) 100%);
+     height: 45px;
+     color: white;
+     line-height: 38px;
+     font-size: 28px;
+     text-align: center;
+    }
+    p{
+     text-align: justify;
+     line-height: 28px;
+     font-size: 20px;
+     width: 90%;
+     margin: auto;
+     padding: 40px;
+
+    }
+   }
+  }
+  .middle-container{
+   display: flex;
+   justify-content: center;
+   // align-items:center;
+   background-color: #D8D8D8;
+   width: 100%;
+   .container-annonce{
+    background-color: #D8D8D8;
+    width: 68%;
     height: auto;
 
     .titre-container-annonce{
@@ -181,6 +213,144 @@ body{
      }
     }
    }
+   annonce-retraite{
+    width: 32%;
+    position: relative;
+   .container-retraite{
+    background-color: #939191;
+    width: 100%;
+    box-shadow: $insetShadow;
+    height: 120vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    .titre-container-retraite{
+     width: 100%;
+     background: linear-gradient(to bottom, rgba(96,108,136,0.6) 0%,rgba(63,76,107,0.6) 100%);
+     // background-color: rgba(138, 159, 170, 0.7);
+     height: 70px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     h2{
+      color: rgb(0, 0, 0);
+     }
+
+    }
+
+    .main-container-retraite{
+     background-color: rgb(255, 255, 255);
+     width: 90%;
+     height: auto;
+     margin:5% auto;
+     // border-radius:15px;
+     box-shadow: $bShadow;
+     .container-card-retraite{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .card-retraite{
+       background: linear-gradient(to right, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+       width: 100%;
+       height: 130px;
+       box-shadow: $bShadow;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       .img-retraite{
+          position: relative;
+          overflow: hidden;
+          width: 150px;
+          height:150px;
+          background-color: #899CA2;
+          border-radius: 75px;
+          // left: 25%;
+          top: 20%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: $bShadow;
+          img{
+           width: 100%;
+           margin-top: 25%;
+          }
+       }
+      }
+     }
+     .card-profils-retraite{
+      margin-top: 40px;
+      color: $font-black;
+      .card-container-top{
+      }
+      .img-profils-retraite{
+
+      }
+      .nom-retraite{
+        padding: 30px 0 20px 0;
+        text-align: center;
+        font-size: 26px;
+      }
+      .presentation-retraite{
+        width: 90%;
+        height: auto;
+        margin: auto;
+        padding: 0 0 20px 0;
+        text-align:justify;;
+        line-height: 28px;
+        .adreese-retraite{
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         background-color: #80CBC4;;
+         margin-bottom: 10px;
+         border-radius: 0 7px 7px 0;
+         text-align:center;
+         span{
+          width: 50px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          img{
+           width: 100%;
+           height: 100%;
+          }
+         }
+         p{
+          margin-left: 20px;
+         }
+        }
+        p{
+         width: 90%;
+         margin: auto;
+        }
+      }
+      .btn-retraite{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        a{
+         width: 70%;
+         background-color: rgb(55, 241, 19);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-decoration: none;
+         padding: 20px 0;
+         margin-bottom: 30px;
+         border-radius: 10px;
+         p{
+         }
+        }
+      }
+     }
+    }
+   }
   }
+ }
  }
 }

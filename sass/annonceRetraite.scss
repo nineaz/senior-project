@@ -9,14 +9,16 @@ $font-black: rgba(0, 0, 0, 0.5);
 body{
  .warper{
   annonce-retraite{
-   width: 30%;
-   position: relative;
+   width: 32%;
+   z-index: 50;
+   position: fixed;
+   top: 0;
+   right:0;
    .container-retraite{
     background-color: #939191;
     width: 100%;
     box-shadow: $insetShadow;
-    top: 0;
-    left: 0;
+
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
@@ -147,6 +149,8 @@ body{
      }
     }
    }
+
+
   }
  }
 }

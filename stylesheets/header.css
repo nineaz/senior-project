@@ -87,7 +87,7 @@ body header .nav-menu ul {
 }
 /* line 33, ../sass/header.scss */
 body header .nav-menu .logo {
-  width: 60%;
+  width: 52%;
   text-align: left;
 }
 /* line 36, ../sass/header.scss */
@@ -133,7 +133,7 @@ body header .nav-menu .menu-home ul li a {
 /* line 78, ../sass/header.scss */
 body header .nav-menu li {
   height: auto;
-  width: 10%;
+  width: 12%;
   text-align: center;
 }
 /* line 82, ../sass/header.scss */

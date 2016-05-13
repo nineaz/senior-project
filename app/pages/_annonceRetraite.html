@@ -3,7 +3,7 @@
   <h2>Dernier Retraité</h2>
  </div>
 
- <div class="main-container-retraite" ng-repeat=" user in users">
+ <div class="main-container-retraite" ng-repeat=" user in users | limitTo: 3">
   <div class="container-card-retraite">
    <div class="card-retraite">
      <div class="img-retraite">
