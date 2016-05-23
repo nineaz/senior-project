@@ -118,9 +118,9 @@ main{
 }
 
 .geo p {
+	width: 70%;
 	font-size: 20px;
 	color:rgb(246, 241, 246);
-	margin-top: 30px;
 	margin-left: 15px;
 }
 
@@ -128,7 +128,7 @@ main{
 	width: 64px;
 	height: 64px;
 	margin-top: 10px;
-	float:left;
+	/*float:left;*/
 	background-image: url(../images/icon/placeholder.svg);
 	background-size: cover;
 	background-position: center;
@@ -168,7 +168,7 @@ main{
 /*  = = = = = = = = = =  Div de droite : infos détaillées = = = = = = = = = = */
 .profil-details {
 	width: 59%;
-	height:850px;
+	height:900px;
 	background-color: rgb(255, 255, 255);
 }
 

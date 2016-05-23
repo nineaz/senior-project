@@ -16,11 +16,12 @@
     <h2>Dernière Annonce</h2>
    </div>
 
-   <div class="container-card-entreprise" ng-repeat=" societe in societes | limitTo:1">
+ <ul rn-carousel class="image">
+   <li class="container-card-entreprise" ng-repeat=" societe in societes | limitTo:5">
     <div class="card-entreprise">
       <div class="img-entreprise">
        <div class="btn-entreprise">
-        <a href="#">
+        <a href="#/monProfils">
          <p>voir la fiche</p>
         </a>
        </div>
@@ -50,7 +51,9 @@
        </div>
       </div>
     </div>
-   </div>
+   </li>
+  </ul>
+
    <div class="btn-carroussel">
     <div id="btn-left">
      <img src="../../images/icon/back.svg" alt="" />

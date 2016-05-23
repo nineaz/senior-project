@@ -1,0 +1,51 @@
+<section class="middle-container">
+ <section class="container-annonce">
+   <div class="titre-container-annonce">
+    <h2>Dernière Annonce</h2>
+   </div>
+
+   <div class="container-card-entreprise" ng-repeat=" societe in societes | limitTo:1">
+    <div class="card-entreprise">
+      <div class="img-entreprise">
+       <div class="btn-entreprise">
+        <a href="#/monProfils">
+         <p>voir la fiche</p>
+        </a>
+       </div>
+      </div>
+    </div>
+
+    <div class="card-profils-entreprise">
+     <div class="container-info-entreprise">
+      <div class="nom-entreprise">
+       <p>{{societe.company}}</p>
+      </div>
+      <div class="img-profils-entreprise">
+       <img src="../../images/icon/businessman.svg" alt="">
+      </div>
+      <div class="annonce-entreprise">
+       <h4>On recherche :</h4>
+       <p>
+        {{societe.about}}
+       </p>
+      </div>
+     </div>
+      <div class="add-entreprise">
+       <div class="bg-add-entreprise">
+        <div class="cross-add">
+         <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+        </div>
+       </div>
+      </div>
+    </div>
+   </div>
+   <div class="btn-carroussel">
+    <div id="btn-left">
+     <img src="../../images/icon/back.svg" alt="" />
+    </div>
+    <div id="btn-right">
+     <img src="../../images/icon/next.svg" alt="" />
+    </div>
+   </div>
+ </section>
+</section>

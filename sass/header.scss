@@ -11,6 +11,7 @@ body{
   width: 100%;
   height:600px;
   // background-image: url(../images/banner.jpeg);
+  // background-image: url(../images/photo.jpg);
   background-color: rgba(69, 102, 121, 0.70);
   background-repeat: no-repeat;
   background-size: cover;
@@ -222,6 +223,18 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    a{
+     width: 48%;
+     height: 48%;
+     li{
+      width:100%;
+      height: 100%;
+      img{
+       width: 70%;
+       height: 70%;
+      }
+     }
+    }
     li{
      width: 48%;
      height: 48%;

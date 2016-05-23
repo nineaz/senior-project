@@ -9,7 +9,7 @@ appProjectSenior.config(function($routeProvider){
    controller: 'societesCtrl'
   })
   .when("/recruteur", {
-   templateUrl:"recruteur.html",
+   templateUrl:"apercuProfils.html",
    controller: 'recruteurCtrl'
   })
   .when("/retraite", {
@@ -32,6 +32,10 @@ appProjectSenior.config(function($routeProvider){
      templateUrl:"monProfils.html",
      controller: 'retraiteCtrl'
     })
+ .when("/faq", {
+    templateUrl:"faq.html",
+    controller: 'societesCtrl'
+   })
   .otherwise({
    redirectTo: "/"
   });

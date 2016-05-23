@@ -75,7 +75,7 @@ body header {
   flex-direction: column;
   justify-content: space-between;
 }
-/* line 24, ../sass/header.scss */
+/* line 25, ../sass/header.scss */
 body header .nav-menu ul {
   position: relative;
   width: 98%;
@@ -85,12 +85,12 @@ body header .nav-menu ul {
   display: flex;
   justify-content: center;
 }
-/* line 33, ../sass/header.scss */
+/* line 34, ../sass/header.scss */
 body header .nav-menu .logo {
   width: 52%;
   text-align: left;
 }
-/* line 36, ../sass/header.scss */
+/* line 37, ../sass/header.scss */
 body header .nav-menu .logo a {
   width: 100%;
   border: none;
@@ -98,11 +98,11 @@ body header .nav-menu .logo a {
   background-color: transparent;
   font-size: 34px;
 }
-/* line 44, ../sass/header.scss */
+/* line 45, ../sass/header.scss */
 body header .nav-menu .menu-home {
   text-align: center;
 }
-/* line 50, ../sass/header.scss */
+/* line 51, ../sass/header.scss */
 body header .nav-menu .menu-home ul {
   position: relative;
   top: 7%;
@@ -113,7 +113,7 @@ body header .nav-menu .menu-home ul {
   flex-direction: column;
   width: 100%;
 }
-/* line 59, ../sass/header.scss */
+/* line 60, ../sass/header.scss */
 body header .nav-menu .menu-home ul li {
   width: 100%;
   height: 60px;
@@ -122,7 +122,7 @@ body header .nav-menu .menu-home ul li {
   align-items: center;
   justify-content: center;
 }
-/* line 66, ../sass/header.scss */
+/* line 67, ../sass/header.scss */
 body header .nav-menu .menu-home ul li a {
   width: 100%;
   height: 100%;
@@ -130,28 +130,28 @@ body header .nav-menu .menu-home ul li a {
   align-items: center;
   justify-content: center;
 }
-/* line 78, ../sass/header.scss */
+/* line 79, ../sass/header.scss */
 body header .nav-menu li {
   height: auto;
   width: 12%;
   text-align: center;
 }
-/* line 82, ../sass/header.scss */
+/* line 83, ../sass/header.scss */
 body header .nav-menu li a {
   width: 100%;
   text-decoration: none;
   color: white;
   font-size: 22px;
 }
-/* line 89, ../sass/header.scss */
+/* line 90, ../sass/header.scss */
 body header .nav-menu li a:hover {
   color: #28041a;
 }
-/* line 95, ../sass/header.scss */
+/* line 96, ../sass/header.scss */
 body header .nav-search {
   height: auto;
 }
-/* line 97, ../sass/header.scss */
+/* line 98, ../sass/header.scss */
 body header .nav-search ul {
   display: flex;
   justify-content: center;
@@ -159,22 +159,22 @@ body header .nav-search ul {
   width: 100%;
   height: 70px;
 }
-/* line 103, ../sass/header.scss */
+/* line 104, ../sass/header.scss */
 body header .nav-search ul .nav-search-select {
   background-color: rgba(69, 102, 121, 0.7);
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-/* line 109, ../sass/header.scss */
+/* line 110, ../sass/header.scss */
 body header .nav-search ul .position-search-input {
   background-color: rgba(74, 96, 111, 0.7);
 }
-/* line 112, ../sass/header.scss */
+/* line 113, ../sass/header.scss */
 body header .nav-search ul .competence-search-input {
   background-color: rgba(57, 72, 82, 0.7);
 }
-/* line 115, ../sass/header.scss */
+/* line 116, ../sass/header.scss */
 body header .nav-search ul li {
   display: flex;
   align-items: center;
@@ -184,14 +184,14 @@ body header .nav-search ul li {
   text-align: center;
   background-color: #e9ae16;
 }
-/* line 124, ../sass/header.scss */
+/* line 125, ../sass/header.scss */
 body header .nav-search ul li input {
   height: 40px;
   width: 75%;
   box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
-/* line 131, ../sass/header.scss */
+/* line 132, ../sass/header.scss */
 body header .nav-search ul li .add-competence {
   width: 70%;
   height: 40px;
@@ -202,18 +202,18 @@ body header .nav-search ul li .add-competence {
   justify-content: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
-/* line 140, ../sass/header.scss */
+/* line 141, ../sass/header.scss */
 body header .nav-search ul li .add-competence a {
   text-decoration: none;
   color: white;
 }
-/* line 145, ../sass/header.scss */
+/* line 146, ../sass/header.scss */
 body header .nav-search ul li select {
   height: 40px;
   width: 73%;
   text-align: center;
 }
-/* line 150, ../sass/header.scss */
+/* line 151, ../sass/header.scss */
 body header .nav-search ul li select option {
   height: 50px;
   display: flex;
@@ -221,38 +221,38 @@ body header .nav-search ul li select option {
   align-items: center;
   color: white;
 }
-/* line 157, ../sass/header.scss */
+/* line 158, ../sass/header.scss */
 body header .nav-search ul li select option:nth-child(1) {
   background-color: #222222;
 }
-/* line 160, ../sass/header.scss */
+/* line 161, ../sass/header.scss */
 body header .nav-search ul li select option:nth-child(2) {
   background-color: #333333;
 }
-/* line 163, ../sass/header.scss */
+/* line 164, ../sass/header.scss */
 body header .nav-search ul li select option:nth-child(3) {
   background-color: #444444;
 }
-/* line 166, ../sass/header.scss */
+/* line 167, ../sass/header.scss */
 body header .nav-search ul li select option:nth-child(4) {
   background-color: #555555;
 }
-/* line 169, ../sass/header.scss */
+/* line 170, ../sass/header.scss */
 body header .nav-search ul li select option:nth-child(5) {
   background-color: #666666;
 }
-/* line 174, ../sass/header.scss */
+/* line 175, ../sass/header.scss */
 body header .nav-search ul li .boutton-send {
   background-color: #2d6301;
   width: 60px;
   height: 60px;
 }
-/* line 178, ../sass/header.scss */
+/* line 179, ../sass/header.scss */
 body header .nav-search ul li .boutton-send img {
   width: 85%;
   height: 85%;
 }
-/* line 183, ../sass/header.scss */
+/* line 184, ../sass/header.scss */
 body header .nav-search ul li span {
   width: 60px;
   height: 50px;
@@ -261,12 +261,12 @@ body header .nav-search ul li span {
   justify-content: center;
   border-radius: 5px;
 }
-/* line 190, ../sass/header.scss */
+/* line 191, ../sass/header.scss */
 body header .nav-search ul li span img {
   width: 100%;
   height: 100%;
 }
-/* line 199, ../sass/header.scss */
+/* line 200, ../sass/header.scss */
 body .avant-annonce {
   width: 95%;
   margin: auto;
@@ -277,7 +277,7 @@ body .avant-annonce {
   justify-content: space-around;
   align-items: center;
 }
-/* line 209, ../sass/header.scss */
+/* line 210, ../sass/header.scss */
 body .avant-annonce div {
   width: 24%;
   height: 94%;
@@ -288,7 +288,7 @@ body .avant-annonce div {
   font-size: 30px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
-/* line 218, ../sass/header.scss */
+/* line 219, ../sass/header.scss */
 body .avant-annonce div ul {
   width: 100%;
   height: 100%;
@@ -297,7 +297,22 @@ body .avant-annonce div ul {
   justify-content: space-around;
   align-items: center;
 }
-/* line 225, ../sass/header.scss */
+/* line 226, ../sass/header.scss */
+body .avant-annonce div ul a {
+  width: 48%;
+  height: 48%;
+}
+/* line 229, ../sass/header.scss */
+body .avant-annonce div ul a li {
+  width: 100%;
+  height: 100%;
+}
+/* line 232, ../sass/header.scss */
+body .avant-annonce div ul a li img {
+  width: 70%;
+  height: 70%;
+}
+/* line 238, ../sass/header.scss */
 body .avant-annonce div ul li {
   width: 48%;
   height: 48%;
@@ -307,11 +322,11 @@ body .avant-annonce div ul li {
   align-items: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
-/* line 233, ../sass/header.scss */
+/* line 246, ../sass/header.scss */
 body .avant-annonce div ul li:hover {
   background-color: rgba(0, 0, 0, 0.63);
 }
-/* line 236, ../sass/header.scss */
+/* line 249, ../sass/header.scss */
 body .avant-annonce div ul li img {
   width: 70%;
   height: 70%;
